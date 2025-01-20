@@ -13,5 +13,12 @@ $purple-gradient-1: #4851ff;
 $purple-gradient-2: #f02aa6;
 
 // Gradient Lists
-$pink-list: $pink-gradient-1, $pink-gradient-2;
-$purple-list: $purple-gradient-1, $purple-gradient-2;
+$list1: $pink-gradient-1, $pink-gradient-2;
+$list2: $purple-gradient-1, $purple-gradient-2;
+
+@mixin gradient($direction, $list) {
+    background: -webkit-linear-gradient($direction, $list);
+    background: -moz-linear-gradient($direction, $list);
+    background: -o-linear-gradient($direction, $list);
+    background: linear-gradient($direction, $list);
+}
