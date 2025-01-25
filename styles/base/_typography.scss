@@ -13,3 +13,17 @@ $body-font: "Plus Jakarta Sans",
     serif;
 $body-text-size-1: 1.125rem;
 $body-text-size-2: 7.25rem;
+
+
+
+//Styles
+h1,
+h2,
+h3,
+h4 {
+    font-family: $header-font-family;
+}
+
+h1 {
+    font-size: $h1-header-size;
+}

@@ -3,6 +3,8 @@
 *,
 *::before,
 *::after {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
   outline: 1px solid black;
 }
@@ -81,4 +83,25 @@ select {
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+}
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  cursor: default;
+}
+
+.container {
+  width: 100%;
+  padding: 0 0.9375rem;
+  margin: auto;
 }/*# sourceMappingURL=main.css.map */

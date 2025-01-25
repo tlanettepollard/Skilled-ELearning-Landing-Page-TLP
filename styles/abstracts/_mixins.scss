@@ -1,0 +1,54 @@
+@use 'media' as *;
+
+// Flex Mixin
+@mixin flex($direction, $justifyContent, $alignItems) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+
+// Media Mixins
+
+// SM Mobile 576px
+@mixin bp-sm-mobile {
+    @media screen and (max-width: $sm-mobile) {
+        @content;
+    }
+}
+
+// MD Tablet 768px
+@mixin bp-md-tablet {
+    @media screen and (min-width: $md-tablet) {
+        @content;
+    }
+}
+
+// LG Tablet 992px
+@mixin bp-lg-tablet {
+    @media screen and (min-width: $lg-tablet) {
+        @content;
+    }
+}
+
+// XL Desktop 1200px
+@mixin bp-xl-desktop {
+    @media screen and (min-width: $xl-desktop) {
+        @content;
+    }
+}
+
+// XXL Desktop 1400px
+@mixin bp-xxl-desktop {
+    @media screen and (min-width: $xxl-desktop) {
+        @content;
+    }
+}
+
+// Media Mixins-- Max-Width
+// XS Mobile 375px
+@mixin bp-xs-mobile {
+    @media screen and (max-width: $xs-mobile) {
+        @content;
+    }
+}
