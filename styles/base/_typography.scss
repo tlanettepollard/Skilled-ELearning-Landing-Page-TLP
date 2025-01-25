@@ -1,10 +1,10 @@
 // Header Font
 $header-font-family: "Plus Jakarta Sans",
     serif;
-$h1-header-size: 3.5rem;
-$h2-header-size: 2.5rem;
-$h3-header-size: 2rem;
-$h4-header-size: 1.5rem;
+$h1-text-size: 3.5rem;
+$h2-text-size: 2.5rem;
+$h3-text-size: 2rem;
+$h4-text-size: 1.5rem;
 
 
 
@@ -25,5 +25,21 @@ h4 {
 }
 
 h1 {
-    font-size: $h1-header-size;
+    font-size: $h1-text-size;
+    line-height: 120%;
+}
+
+h2 {
+    font-size: $h2-text-size;
+    line-height: 120%;
+}
+
+h3 {
+    font-size: $h3-text-size;
+    line-height: 120%;
+}
+
+h4 {
+    font-size: $h4-text-size;
+    line-height: 120%;
 }
