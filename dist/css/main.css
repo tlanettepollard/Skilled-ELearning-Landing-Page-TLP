@@ -96,17 +96,32 @@ h1 {
   line-height: 120%;
   font-weight: 900;
 }
+@media screen and (min-width: 992px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+}
 
 h2 {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   line-height: 120%;
   font-weight: 900;
 }
+@media screen and (min-width: 992px) {
+  h2 {
+    font-size: 2.5rem;
+  }
+}
 
 h3 {
-  font-size: 2rem;
+  font-size: 1.125rem;
   line-height: 120%;
   font-weight: 900;
+}
+@media screen and (min-width: 992px) {
+  h3 {
+    font-size: 2rem;
+  }
 }
 
 h4 {
