@@ -5,6 +5,11 @@
 @use 'base/reset' as *;
 @use 'base/typography' as *;
 
+@use 'layout/footer' as *;
+@use 'layout/header' as *;
+@use 'layout/hero' as *;
+@use 'layout/maincontent' as *;
+
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 
