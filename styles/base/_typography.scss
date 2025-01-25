@@ -12,7 +12,7 @@ $h4-text-size: 1.5rem;
 $body-font: "Plus Jakarta Sans",
     serif;
 $body-text-size-1: 1.125rem;
-$body-text-size-2: 7.25rem;
+$body-text-size-2: 1rem;
 
 
 
@@ -25,21 +25,28 @@ h4 {
 }
 
 h1 {
-    font-size: $h1-text-size;
+    font-size: $h2-text-size;
     line-height: 120%;
+    font-weight: 900;
+    @include bp-lg-tablet {
+        font-size: $h1-text-size;
+    }
 }
 
 h2 {
     font-size: $h2-text-size;
     line-height: 120%;
+    font-weight: 900;
 }
 
 h3 {
     font-size: $h3-text-size;
     line-height: 120%;
+    font-weight: 900;
 }
 
 h4 {
     font-size: $h4-text-size;
     line-height: 120%;
+    font-weight: 900;
 }
