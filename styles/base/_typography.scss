@@ -1,3 +1,6 @@
+@use '../abstracts' as *;
+
+
 // Header Font
 $header-font-family: "Plus Jakarta Sans",
     serif;
@@ -5,7 +8,6 @@ $h1-text-size: 3.5rem;
 $h2-text-size: 2.5rem;
 $h3-text-size: 2rem;
 $h4-text-size: 1.5rem;
-
 
 
 // Body Font 
@@ -28,21 +30,31 @@ h1 {
     font-size: $h2-text-size;
     line-height: 120%;
     font-weight: 900;
+
     @include bp-lg-tablet {
         font-size: $h1-text-size;
     }
 }
 
 h2 {
-    font-size: $h2-text-size;
+    font-size: $h4-text-size;
     line-height: 120%;
     font-weight: 900;
+
+    @include bp-lg-tablet {
+        font-size: $h2-text-size;
+    }
 }
 
 h3 {
-    font-size: $h3-text-size;
+    font-size: $body-text-size-1;
     line-height: 120%;
     font-weight: 900;
+
+    @include bp-lg-tablet {
+        font-size: $h3-text-size;
+    }
+
 }
 
 h4 {
