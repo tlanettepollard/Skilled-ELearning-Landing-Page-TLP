@@ -84,8 +84,20 @@ select {
     scroll-behavior: auto !important;
   }
 }
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Plus Jakarta Sans", serif;
+}
+
+h1 {
+  font-size: 3.5rem;
+}
+
 body {
   font-family: "Plus Jakarta Sans", serif;
+  cursor: default;
 }
 
 .container {
