@@ -1,4 +1,7 @@
 @use 'abstracts/colors' as *;
+@use 'abstracts/media' as *;
+@use 'abstracts/mixins' as *;
+
 @use 'base/reset' as *;
 @use 'base/typography' as *;
 
@@ -14,6 +17,7 @@ body {
 
 .container {
     width: 100%;
-    padding: 0 .9375rem;
+    max-width: 87.5rem;
+    padding: .9375rem;
     margin: auto;
 }
