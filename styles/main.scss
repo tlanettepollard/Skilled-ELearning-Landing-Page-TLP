@@ -2,7 +2,17 @@
 @use 'base/reset' as *;
 @use 'base/typography' as *;
 
-
-
-
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+
+// Global Styles
+
+body {
+    font-family: $body-font;
+}
+
+.container {
+    width: 100%;
+    padding: 0 .9375rem;
+    margin: auto;
+}
