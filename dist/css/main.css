@@ -141,6 +141,7 @@ body {
 .container {
   width: 100%;
   max-width: 87.5rem;
-  padding: 0.9375rem;
+  padding-right: 0.9375rem;
+  padding-left: 0.9375rem;
   margin: auto;
 }/*# sourceMappingURL=main.css.map */
