@@ -5,6 +5,8 @@
 @use 'base/reset' as *;
 @use 'base/typography' as *;
 
+@use 'components/buttons' as *;
+
 @use 'layout/footer' as *;
 @use 'layout/header' as *;
 @use 'layout/hero' as *;
@@ -26,6 +28,7 @@ body {
 .container {
     width: 100%;
     max-width: 87.5rem;
-    padding: .9375rem;
+    padding-right: .9375rem;
+    padding-left: .9375rem;
     margin: auto;
 }
