@@ -1,7 +1,26 @@
 .container {
     width: 100%;
-    max-width: 87.5rem;
     padding-right: .9375rem;
     padding-left: .9375rem;
-    margin: auto;
+    margin-right: auto;
+    margin-left: auto;
+
+    @include bp-sm-mobile {
+        .container {
+            max-width: 33.75rem;
+        }
+    }
+
+    @include bp-md-tablet {
+        .container {
+            max-width: 46.875rem;
+        }
+    }
+
+    @include bp-lg-tablet {
+        .container {
+            max-width: 60.625rem;
+        }
+    }
+
 }
