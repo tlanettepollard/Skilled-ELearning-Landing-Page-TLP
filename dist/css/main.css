@@ -130,18 +130,18 @@ h4 {
   font-weight: 900;
 }
 
-body {
-  font-family: "Plus Jakarta Sans", serif;
-  font-size: 1.125rem;
-  line-height: 150%;
-  font-weight: 400;
-  cursor: default;
-}
-
 .container {
   width: 100%;
   max-width: 87.5rem;
   padding-right: 0.9375rem;
   padding-left: 0.9375rem;
   margin: auto;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", serif;
+  font-size: 1.125rem;
+  line-height: 150%;
+  font-weight: 400;
+  cursor: default;
 }/*# sourceMappingURL=main.css.map */

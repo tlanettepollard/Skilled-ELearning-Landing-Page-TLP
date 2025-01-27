@@ -6,6 +6,7 @@
 @use 'base/typography' as *;
 
 @use 'components/buttons' as *;
+@use 'components/containers' as *;
 
 @use 'layout/footer' as *;
 @use 'layout/header' as *;
@@ -25,10 +26,3 @@ body {
     cursor: default;
 }
 
-.container {
-    width: 100%;
-    max-width: 87.5rem;
-    padding-right: .9375rem;
-    padding-left: .9375rem;
-    margin: auto;
-}
