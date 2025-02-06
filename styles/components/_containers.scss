@@ -1,3 +1,6 @@
+@use '../abstracts' as *;
+
+
 .container {
     width: 100%;
     padding-right: .9375rem;
@@ -22,6 +25,7 @@
             max-width: 60.625rem;
         }
     }
+
     @include bp-xl-desktop {
         .container {
             max-width: 73.125rem;
