@@ -163,10 +163,36 @@ h4 {
   }
 }
 
+.header__container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 5.6875rem;
+}
+
 body {
   font-family: "Plus Jakarta Sans", serif;
   font-size: 1.125rem;
   line-height: 150%;
   font-weight: 400;
   cursor: default;
+}
+
+.logo {
+  width: 4.9556rem;
+  height: 1.25rem;
+}
+@media screen and (min-width: 992px) {
+  .logo {
+    width: 6.9375rem;
+    height: 1.75rem;
+  }
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }/*# sourceMappingURL=main.css.map */
