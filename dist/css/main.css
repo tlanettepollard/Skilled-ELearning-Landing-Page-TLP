@@ -133,6 +133,31 @@ h4 {
 .btn {
   width: 10.5rem;
   height: 3.6875rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1.75rem;
+  -webkit-border-radius: 1.75rem;
+  -moz-border-radius: 1.75rem;
+  -ms-border-radius: 1.75rem;
+  -o-border-radius: 1.75rem;
+}
+@media screen and (min-width: 768px) {
+  .btn {
+    width: 9.5rem;
+    height: 3rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .btn {
+    width: 10.5rem;
+    height: 3.6875rem;
+    font-size: 1.125rem;
+  }
 }
 
 .container {
