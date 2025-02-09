@@ -143,32 +143,54 @@ h4 {
   margin-left: auto;
 }
 @media screen and (max-width: 576px) {
-  .container .container {
+  .container {
     max-width: 33.75rem;
   }
 }
 @media screen and (min-width: 768px) {
-  .container .container {
+  .container {
     max-width: 46.875rem;
   }
 }
 @media screen and (min-width: 992px) {
-  .container .container {
+  .container {
     max-width: 60.625rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 @media screen and (min-width: 1200px) {
-  .container .container {
+  .container {
     max-width: 73.125rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .container {
+    max-width: 90%;
+  }
+}
 
+.header {
+  position: absolute;
+  width: 100%;
+  z-index: 1;
+}
 .header__container {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
   height: 5.6875rem;
+}
+@media screen and (min-width: 992px) {
+  .header__container {
+    height: 6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .header__container {
+    height: 6.6875rem;
+  }
 }
 
 body {

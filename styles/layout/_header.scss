@@ -1,8 +1,22 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-.header__container {
-    @include flex(row, space-between, center);
-    height: 5.6875rem;  
 
+.header {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+
+    &__container {
+        @include flex(row, space-between, center);
+        height: 5.6875rem;
+
+        @include bp-lg-tablet {
+            height: 6rem;
+        }
+
+        @include bp-xl-desktop {
+            height: 6.6875rem;
+        }
+    }
 }
