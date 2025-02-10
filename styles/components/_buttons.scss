@@ -3,4 +3,43 @@
 .btn {
     width: 10.5rem;
     height: 3.6875rem;
+    font-size: 1rem;
+    font-weight: 700;
+    color: $btn-font-color;
+    @include flex(row, center, center);
+    border-radius: 1.75rem;
+    -webkit-border-radius: 1.75rem;
+    -moz-border-radius: 1.75rem;
+    -ms-border-radius: 1.75rem;
+    -o-border-radius: 1.75rem;
+
+    @include bp-md-tablet {
+        width: 9.5rem;
+        height: 3rem;
+    }
+
+    @include bp-lg-tablet {
+        width: 10.5rem;
+        height: 3.6875rem;
+        font-size: 1.125rem;
+    }
+
+}
+
+a:link {
+    text-decoration: none;
+}
+
+// Header Button
+.header__btn {
+    background-color: $header-btn;
+}
+
+.header__btn:hover {
+    background-color: $blue-600;
+}
+
+// Hero Button
+.hero__btn {
+    @include gradient(to top, $list1);
 }
