@@ -5,7 +5,7 @@
     height: 3.6875rem;
     font-size: 1rem;
     font-weight: 700;
-    color: $white;
+    color: $btn-font-color;
     @include flex(row, center, center);
     border-radius: 1.75rem;
     -webkit-border-radius: 1.75rem;
@@ -23,4 +23,20 @@
         height: 3.6875rem;
         font-size: 1.125rem;
     }
+
 }
+
+a:link {
+    text-decoration: none;
+}
+
+// Header Button
+.header__btn {
+    background-color: $header-btn;
+}
+
+.header__btn:hover {
+    background-color: $blue-600;
+}
+
+// Hero Button
