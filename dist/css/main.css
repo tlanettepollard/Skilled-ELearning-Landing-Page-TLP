@@ -173,6 +173,10 @@ a:link {
   background-color: #666ca3;
 }
 
+.hero__btn {
+  background: linear-gradient(to top, #F02aa6, #ff6f48);
+}
+
 .container {
   width: 100%;
   padding-right: 0.9375rem;

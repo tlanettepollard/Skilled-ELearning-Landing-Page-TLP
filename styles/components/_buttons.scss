@@ -40,3 +40,6 @@ a:link {
 }
 
 // Hero Button
+.hero__btn {
+    @include gradient(to top, $list1);
+}
