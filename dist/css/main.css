@@ -288,6 +288,7 @@ footer .footer__container {
 @media screen and (min-width: 768px) {
   .hero__container {
     flex-direction: row;
+    justify-content: space-between;
     padding-top: 4.6875rem;
     padding-bottom: 11.75rem;
     position: relative;
@@ -299,6 +300,11 @@ footer .footer__container {
 .hero__container .hero__content--text {
   max-width: 25rem;
   padding: 1.625rem 0 1.5rem;
+}
+@media screen and (min-width: 768px) {
+  .hero__container .hero__content--text {
+    max-width: 20.3125rem;
+  }
 }
 .hero__container .hero__img {
   max-width: 23.125rem;

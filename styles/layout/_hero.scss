@@ -16,6 +16,7 @@
 
         @include bp-md-tablet {
             flex-direction: row;
+            justify-content: space-between;
             padding-top: 4.6875rem;
             padding-bottom: 11.75rem;
             position: relative;
@@ -29,6 +30,10 @@
             &--text {
                 max-width: 25rem;
                 padding: 1.625rem 0 1.5rem;
+
+                @include bp-md-tablet {
+                    max-width: 20.3125rem;
+                }
             }
         }
 
