@@ -1,36 +1,13 @@
 @use '../abstracts' as *;
-
+@use '../base' as *;
 
 .container {
-    width: 100%;
-    padding-right: .9375rem;
-    padding-left: .9375rem;
-    margin-right: auto;
     margin-left: auto;
+    margin-right: auto;
 
-    @include bp-sm-mobile {
-        max-width: 33.75rem;
+    @include bp-xs-mobile {
+        width: 100%; 
+        padding-left: 1rem;
+        padding-right: 1rem;
     }
-
-    @include bp-md-tablet {
-        max-width: 46.875rem;
-
-    }
-
-    @include bp-lg-tablet {
-        max-width: 60.625rem;
-        padding-left: 0rem;
-        padding-right: 0rem;
-
-    }
-
-    @include bp-xl-desktop {
-        max-width: 73.125rem;
-
-    }
-
-    @include bp-xxl-desktop {
-        max-width: 90%;
-    }
-
 }

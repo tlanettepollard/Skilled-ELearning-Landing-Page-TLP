@@ -1,0 +1,10 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+footer {
+    background-color: $blue-900;
+    .footer__container {
+        height: 7.5rem;
+        @include flex(row, space-between, center);
+    }
+}
