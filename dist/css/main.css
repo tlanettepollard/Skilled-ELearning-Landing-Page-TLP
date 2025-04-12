@@ -250,6 +250,11 @@ a:link {
 .hero__container .hero__content--title {
   max-width: 20.375rem;
 }
+@media screen and (min-width: 768px) {
+  .hero__container {
+    flex-direction: row;
+  }
+}
 
 body {
   font-family: "Plus Jakarta Sans", serif;

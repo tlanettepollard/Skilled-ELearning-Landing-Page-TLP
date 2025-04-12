@@ -14,5 +14,8 @@
                 max-width: 20.375rem;
             }
         }
+        @include bp-md-tablet {
+            flex-direction: row;
+        }
     }
 }
