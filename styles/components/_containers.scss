@@ -21,4 +21,16 @@
         padding-left: 0rem;
         padding-right: 0rem;
     }
+
+    @include bp-lg-tablet {
+        width: 55.75rem;
+    }
+
+    @include bp-xl-desktop {
+        width: 70rem;
+    }
+
+    @include bp-xxl-desktop {
+        width: 90%;
+    }
 }

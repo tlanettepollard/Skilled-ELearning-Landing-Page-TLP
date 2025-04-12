@@ -205,6 +205,21 @@ a:link {
     padding-right: 0rem;
   }
 }
+@media screen and (min-width: 992px) {
+  .container {
+    width: 55.75rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 70rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .container {
+    width: 90%;
+  }
+}
 
 footer {
   background-color: #13183F;
@@ -219,8 +234,8 @@ footer {
 }
 @media screen and (min-width: 1200px) {
   footer {
-    padding-left: 5rem;
-    padding-right: 5rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
   }
 }
 footer .footer__container {
@@ -284,6 +299,12 @@ footer .footer__container {
 }
 .hero__container .hero__img img {
   width: 170%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 .courses {
