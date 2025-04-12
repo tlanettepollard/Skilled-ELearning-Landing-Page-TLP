@@ -3,6 +3,19 @@
 
 footer {
     background-color: $blue-900;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include bp-md-tablet {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem;
+    }
+
+    @include bp-xl-desktop {
+        padding-left: 5rem;
+        padding-right: 5rem;
+    }
+
     .footer__container {
         height: 7.5rem;
         @include flex(row, space-between, center);

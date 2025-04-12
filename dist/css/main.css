@@ -177,6 +177,10 @@ a:link {
   background: linear-gradient(to top, #F02aa6, #ff6f48);
 }
 
+.footer__btn {
+  background: linear-gradient(to top, #4851ff, #f02aa6);
+}
+
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -188,9 +192,36 @@ a:link {
     padding-right: 1rem;
   }
 }
+@media screen and (min-width: 576px) {
+  .container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 43.0625rem;
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}
 
 footer {
   background-color: #13183F;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+@media screen and (min-width: 768px) {
+  footer {
+    padding-left: 2.75rem;
+    padding-right: 2.75rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  footer {
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
 }
 footer .footer__container {
   height: 7.5rem;
