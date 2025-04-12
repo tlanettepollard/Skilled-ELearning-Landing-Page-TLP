@@ -3,7 +3,6 @@
 
 .hero {
     padding-top: 5rem;
-    //padding-bottom: 4rem;
     overflow: hidden;
 
     @include bp-md-tablet {
@@ -25,6 +24,10 @@
         .hero__content {
             &--title {
                 max-width: 20.375rem;
+
+                @include bp-lg-tablet {
+                    max-width: 31.25rem;
+                }
             }
 
             &--text {
@@ -33,6 +36,11 @@
 
                 @include bp-md-tablet {
                     max-width: 20.3125rem;
+                }
+
+                @include bp-lg-tablet {
+                    max-width: 27.8125rem;
+                    padding: 1.8125rem 0 2.5rem;
                 }
             }
         }
