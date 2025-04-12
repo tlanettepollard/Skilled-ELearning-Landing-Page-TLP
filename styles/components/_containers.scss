@@ -10,4 +10,15 @@
         padding-left: 1rem;
         padding-right: 1rem;
     }
+
+    @include bp-sm-mobile {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include bp-md-tablet {
+        width: 43.0625rem; 
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 }

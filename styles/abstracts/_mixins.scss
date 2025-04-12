@@ -12,12 +12,13 @@
 
 // SM Mobile 576px
 @mixin bp-sm-mobile {
-    @media screen and (max-width: $sm-mobile) {
+    @media screen and (min-width: $sm-mobile) {
         @content;
     }
 }
 
 // MD Tablet 768px
+
 @mixin bp-md-tablet {
     @media screen and (min-width: $md-tablet) {
         @content;
