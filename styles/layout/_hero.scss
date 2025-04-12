@@ -2,8 +2,8 @@
 @use '../base' as *;
 
 .hero {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
+    padding-top: 5rem;
+    //padding-bottom: 4rem;
     overflow: hidden;
 
     &__container {
@@ -13,9 +13,26 @@
             &--title {
                 max-width: 20.375rem;
             }
+
+            &--text {
+                max-width: 25rem;
+                padding: 1.625rem 0 1.5rem;
+            }
         }
         @include bp-md-tablet {
             flex-direction: row;
         }
+        .hero__img {
+            max-width: 23.125rem;
+            margin-top: 1.75rem;
+            align-self: center;
+            
+            img {
+                width: 170%;
+            }
+        }
+
+
+
     }
 }

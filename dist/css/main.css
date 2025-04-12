@@ -255,8 +255,7 @@ footer .footer__container {
 }
 
 .hero {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 5rem;
   overflow: hidden;
 }
 .hero__container {
@@ -269,10 +268,22 @@ footer .footer__container {
 .hero__container .hero__content--title {
   max-width: 20.375rem;
 }
+.hero__container .hero__content--text {
+  max-width: 25rem;
+  padding: 1.625rem 0 1.5rem;
+}
 @media screen and (min-width: 768px) {
   .hero__container {
     flex-direction: row;
   }
+}
+.hero__container .hero__img {
+  max-width: 23.125rem;
+  margin-top: 1.75rem;
+  align-self: center;
+}
+.hero__container .hero__img img {
+  width: 170%;
 }
 
 .courses {
