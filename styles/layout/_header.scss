@@ -9,14 +9,14 @@
 
     &__container {
         @include flex(row, space-between, center);
-        height: 5.6875rem;
+        height: 5rem;
 
-        @include bp-lg-tablet {
+        @include bp-md-tablet {
             height: 6rem;
         }
 
-        @include bp-xl-desktop {
-            height: 6.6875rem;
+        @include bp-lg-tablet {
+            height: 6.5rem;
         }
 
     }
