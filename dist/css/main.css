@@ -304,6 +304,12 @@ footer .footer__container {
     position: relative;
   }
 }
+@media screen and (min-width: 1400px) {
+  .hero__container {
+    padding-top: 9.25rem;
+    padding-bottom: 11.25rem;
+  }
+}
 .hero__container .hero__content--title {
   max-width: 20.375rem;
 }
@@ -353,6 +359,12 @@ footer .footer__container {
   .hero__container .hero__img {
     left: calc(50% + 6rem);
     bottom: 0;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__container .hero__img {
+    min-width: 65.375rem;
+    left: calc(50% + 1rem);
   }
 }
 .hero__container .hero__img img {
