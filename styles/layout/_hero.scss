@@ -17,6 +17,8 @@
         padding-top: 6.5rem;
     }
 
+
+
     &__container {
         padding-top: 1.375rem;
         @include flex(column, space-between, center);
@@ -27,6 +29,11 @@
             padding-top: 4.6875rem;
             padding-bottom: 11.75rem;
             position: relative;
+        }
+
+        @include bp-xxl-desktop {
+            padding-top: 9.25rem;
+            padding-bottom: 11.25rem;
         }
 
         .hero__content {
@@ -77,6 +84,12 @@
                 left: calc(50% + 6rem);
                 bottom: 0;
             }
+
+            @include bp-xxl-desktop {
+                min-width: 65.375rem;
+                left: calc(50% + 1rem);
+            }
+
 
             img {
                 width: 170%;
