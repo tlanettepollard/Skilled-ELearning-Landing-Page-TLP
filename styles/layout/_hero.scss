@@ -7,10 +7,39 @@
     gap: $spacing-100;
     padding: $spacing-800 $spacing-250;
 
+
+
     &__container {
+        @include flex (column, center, center);
+        align-self: stretch;
+
+        @include bp-md-tablet {
+            max-width: 70rem;
+            flex-direction: row;
+            gap: $spacing-300;
+        }
+
         .hero__content {
             @include flex (column, center, start);
             gap: $spacing-100;
+
+            &--title {}
+
+            &--text {}
+
+        }
+
+        .hero__img {
+            @include flex (row, center, center);
+            height: 20rem;
+            padding: .625rem .25rem .5625rem .25rem;
+            align-self: stretch;
+
+            @include bp-md-tablet {
+                width: 37.5rem;
+                height: 25rem;
+                //flex: 1 0 0;
+            }
         }
     }
 }
