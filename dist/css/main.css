@@ -275,6 +275,15 @@ footer .footer__container {
   justify-content: center;
   align-items: center;
   align-self: stretch;
+  gap: 0.5rem;
+  padding: 4rem 1.25rem;
+}
+.hero__container .hero__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  gap: 0.5rem;
 }
 
 /*
