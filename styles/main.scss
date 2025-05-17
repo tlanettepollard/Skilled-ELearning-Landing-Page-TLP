@@ -12,7 +12,7 @@
 @use 'layout/footer' as *;
 @use 'layout/header' as *;
 @use 'layout/hero' as *;
-@use 'layout/maincontent' as *;
+@use 'layout/mainsection' as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
@@ -30,6 +30,7 @@ body {
 .logo {
     width: 4.9556rem;
     height: 1.25rem;
+
     @include bp-lg-tablet {
         width: 6.9375rem;
         height: 1.75rem;
