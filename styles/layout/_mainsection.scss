@@ -1,0 +1,24 @@
+@use '../abstracts' as *;
+@use '../base' as *;
+
+.courses {
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+
+    &__container {
+        @include flex (column, center, center);
+        align-self: stretch;
+        gap: $spacing-100;
+        padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
+
+        .courses__heading {
+            @include flex (column, center, start);
+            align-self: stretch;
+            padding: $spacing-400;
+            gap: $spacing-100;
+            border-radius: .9375rem;
+            @include gradient(to top, $list1);
+            box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+        }
+    }
+
+}
