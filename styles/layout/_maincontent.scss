@@ -2,5 +2,13 @@
 @use '../base' as *;
 
 .courses {
-background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
+
+    &__container {
+        @include flex (column, center, center);
+        align-self: stretch;
+        gap: $spacing-100;
+        padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
+    }
+
 }

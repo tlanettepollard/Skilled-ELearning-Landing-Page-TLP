@@ -421,6 +421,15 @@ footer .footer__container {
 .courses {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
+.courses__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  gap: 0.5rem;
+  padding: 4rem 1.25rem 5rem 1.25rem;
+}
 
 body {
   font-family: "Plus Jakarta Sans", serif;
