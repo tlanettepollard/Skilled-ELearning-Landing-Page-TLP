@@ -29,21 +29,21 @@
 
         }
 
-        .hero__img {
-            @include flex (row, center, center);
-            height: 20rem;
-            padding: .625rem .25rem .5625rem .25rem;
-            align-self: stretch;
+        .hero__img--mobile {
+            background-image: url('/assets/image-hero-mobile.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 27.1875rem 25.5625rem;
+            height: 24.125rem;
+            width: 100%;
+            margin: auto;
+            margin-top: $spacing-600;
 
-            @include bp-md-tablet {
-                width: 37.5rem;
-                height: 25rem;
-                //flex: 1 0 0;
-            }
         }
     }
 }
 
+.hero__img--large {}
 
 
 
