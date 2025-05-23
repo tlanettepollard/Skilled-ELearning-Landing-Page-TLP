@@ -442,6 +442,39 @@ footer .footer__container {
   background: linear-gradient(to top, #F02aa6, #ff6f48);
   box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
 }
+.courses__container .course__cards {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  max-width: 70rem;
+  gap: 2rem;
+}
+.courses__container .course__cards .course__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  align-self: stretch;
+  padding: 4rem 2rem 2.5rem 2rem;
+  gap: 0.5rem;
+  border-radius: 0.9375rem;
+  background-color: #ffffff;
+  box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04) .courses__container .course__cards .course__card --logo;
+  box-shadow-display: flex;
+  box-shadow-flex-direction: row;
+  box-shadow-justify-content: center;
+  box-shadow-align-items: center;
+  box-shadow-width: 3.5rem;
+  box-shadow-height: 3.5rem;
+  box-shadow-gap: 0.5rem;
+}
+.courses__container .course__cards .course__card--heading {
+  height: 1.5rem;
+  align-self: stretch;
+}
+
 body {
   font-family: "Plus Jakarta Sans", serif;
   font-size: 1.125rem;

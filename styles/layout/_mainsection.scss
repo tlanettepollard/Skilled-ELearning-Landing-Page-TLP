@@ -19,8 +19,33 @@
             @include gradient(to top, $list1);
             box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
         }
-        .courses__cards {
-            
+
+        .course__cards {
+            @include flex(column, center, center);
+            align-self: stretch;
+            max-width: 70rem;
+            gap: $spacing-400;
+
+            .course__card {
+                @include flex(column, center, start);
+                align-self: stretch;
+                padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
+                gap: $spacing-100;
+                border-radius: .9375rem;
+                background-color: #ffffff;
+
+                box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04) &--logo {
+                    @include flex(row, center, center);
+                    width: $spacing-700;
+                    height: $spacing-700;
+                    gap: $spacing-100;
+                }
+
+                &--heading {
+                    height: $spacing-300;
+                    align-self: stretch;
+                }
+            }
         }
     }
 
