@@ -7,61 +7,39 @@
     &__container {
         @include flex (column, center, center);
         align-self: stretch;
-        gap: $spacing-100;
         padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
+        gap: $spacing-100;
 
-        .courses__heading {
-            @include flex (column, center, start);
-            align-self: stretch;
-            padding: $spacing-400;
-            gap: $spacing-100;
-            margin-bottom: $spacing-400;
-            border-radius: .9375rem;
-            @include gradient(to top, $list1);
-            box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
-        }
 
         .course__cards {
             @include flex(column, center, center);
-            align-self: stretch;
             max-width: 70rem;
             gap: $spacing-400;
+            align-self: stretch;
+
+
+            .intro__heading {
+                @include flex (column, center, start);
+                align-self: stretch;
+                padding: $spacing-400;
+                gap: $spacing-100;
+                //margin-bottom: $spacing-400;
+                border-radius: .9375rem;
+                @include gradient(to top, $list1);
+                box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+            }
 
             .course__card {
-                width: 100%;
-                height: 17.375rem;
-                @include flex(column, center, start);
-                align-self: stretch;
-                padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
-                gap: $spacing-100;
-                border-radius: .9375rem;
-                background-color: #ffffff;
 
-                box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
 
-                &--logo {
-                    @include flex(row, center, center);
-                    width: $spacing-700;
-                    height: $spacing-700;
-                    gap: -1.75rem;
-                }
 
-                &--heading {
-                    height: $spacing-300;
-                    align-self: stretch;
-                }
+                &--logo {}
 
-                &--text {
-                    line-height: 150%;
-                }
+                &--heading {}
 
-                &--link {
-                    @include flex(row, center, center);
-                    width: 6.5rem;
-                    height: 1.75rem;
-                    padding-bottom: .0625rem;
-                    color: $pink-600;
-                }
+                &--text {}
+
+                &--link {}
             }
         }
     }
