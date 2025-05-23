@@ -17,9 +17,8 @@
             gap: $spacing-400;
             align-self: stretch;
 
-
             .intro__heading {
-                @include flex (column, center, start);
+                @include flex (column, center, flex-start);
                 align-self: stretch;
                 padding: $spacing-400;
                 gap: $spacing-100;
@@ -30,16 +29,42 @@
             }
 
             .course__card {
+                @include flex(column, center, flex-start);
+                //gap: -1.75rem;
+                align-self: stretch;
 
+                &--logo {
+                    @include flex(row, center, flex-start);
+                    padding-left: $spacing-400;
+                    gap: $spacing-100;
+                }
 
+                .card__content {
+                    @include flex(column, center, flex-start);
+                    padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
+                    gap: $spacing-300;
+                    align-self: stretch;
+                    border-radius: .9375rem;
+                    background-color: #ffffff;
+                    box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
 
-                &--logo {}
+                    &--heading {
+                        height: $spacing-300;
+                        align-self: stretch;
+                    }
 
-                &--heading {}
+                    &--text {
+                        align-self: stretch;
+                    }
 
-                &--text {}
-
-                &--link {}
+                    &--link {
+                        @include flex(row, center, center);
+                        width: 6.5rem;
+                        height: 1.75rem;
+                        padding-bottom: .0625rem;
+                        color: $pink-600;
+                    }
+                }
             }
         }
     }
