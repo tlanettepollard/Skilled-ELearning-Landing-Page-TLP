@@ -7,20 +7,40 @@
     &__container {
         @include flex (column, center, center);
         align-self: stretch;
-        gap: $spacing-100;
         padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
+        gap: $spacing-100;
 
-        .courses__heading {
-            @include flex (column, center, start);
+
+        .course__cards {
+            @include flex(column, center, center);
+            max-width: 70rem;
+            gap: $spacing-400;
             align-self: stretch;
-            padding: $spacing-400;
-            gap: $spacing-100;
-            border-radius: .9375rem;
-            @include gradient(to top, $list1);
-            box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
-        }
-        .courses__cards {
-            
+
+
+            .intro__heading {
+                @include flex (column, center, start);
+                align-self: stretch;
+                padding: $spacing-400;
+                gap: $spacing-100;
+                //margin-bottom: $spacing-400;
+                border-radius: .9375rem;
+                @include gradient(to top, $list1);
+                box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+            }
+
+            .course__card {
+
+
+
+                &--logo {}
+
+                &--heading {}
+
+                &--text {}
+
+                &--link {}
+            }
         }
     }
 
