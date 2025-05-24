@@ -18,25 +18,43 @@
             gap: $spacing-400;
             align-self: stretch;
 
+            @include bp-md-tablet {
+                display: grid;
+
+            }
 
 
             .intro__heading {
                 @include flex (column, center, flex-start);
                 align-self: stretch;
+                width: 20.9375rem;
+                height: auto;
                 padding: $spacing-400;
                 gap: $spacing-100;
                 //margin-bottom: $spacing-400;
                 border-radius: .9375rem;
                 @include gradient(to top, $list1);
                 box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+
+                @include bp-md-tablet {
+                    width: 20.5rem;
+                    height: 20.125rem;
+
+                }
             }
 
             .course__card {
                 @include flex(column, center, flex-start);
                 align-self: stretch;
                 gap: $spacing-100;
+                width: 20.9375rem;
+                height: 20.125rem;
 
+                @include bp-md-tablet {
+                    width: 20.5rem;
+                    height: 20.125rem;
 
+                }
 
                 &--logo {
                     position: relative;
