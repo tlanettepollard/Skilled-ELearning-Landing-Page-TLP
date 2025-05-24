@@ -56,10 +56,9 @@
                     @include flex(row, center, flex-start);
                     padding-left: $spacing-400;
                     gap: $spacing-100;
-                    top: 1.25rem;
-                    @include bp-md-tablet{
-                        top: 2.5rem;
-                    }
+                    top: 2.5rem;
+
+
                 }
 
                 .card__content {
