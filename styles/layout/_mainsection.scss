@@ -10,9 +10,7 @@
         padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
         gap: $spacing-100;
 
-        @include bp-md-tablet {
-            padding: $spacing-800 $spacing-550 $spacing-1800 $spacing-550;
-        }
+
 
         .course__cards {
             @include flex(column, center, center);
@@ -20,15 +18,7 @@
             gap: $spacing-400;
             align-self: stretch;
 
-            @include bp-md-tablet {
-                width: 90%;
-                height: 58.125rem;
-                margin: auto;
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: repeat(3, 30%);
-                gap: $spacing-800;
-            }
+
 
             .intro__heading {
                 @include flex (column, center, flex-start);
@@ -46,10 +36,7 @@
                 align-self: stretch;
                 gap: $spacing-100;
 
-                @include bp-md-tablet {
-                    width: 20.5rem;
-                    height: 20.125rem;
-                }
+
 
                 &--logo {
                     position: relative;
