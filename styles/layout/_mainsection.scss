@@ -10,10 +10,20 @@
 
     &__container {
         .course__cards {
+            max-width: 70rem;
             display: grid;
             grid-template-columns: 1fr;
             grid-template-rows: 1fr;
             gap: $spacing-400;
+
+            .intro__heading {
+                @include flex(column, center, flex-start);
+                align-self: stretch;
+                padding: $spacing-400;
+                border-radius: .9375rem;
+                @include gradient(to top, $list1);
+                box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
+            }
         }
     }
 }

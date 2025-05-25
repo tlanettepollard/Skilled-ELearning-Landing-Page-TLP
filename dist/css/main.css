@@ -429,10 +429,22 @@ footer .footer__container {
   gap: 0.5rem;
 }
 .courses__container .course__cards {
+  max-width: 70rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
   gap: 2rem;
+}
+.courses__container .course__cards .intro__heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  align-self: stretch;
+  padding: 2rem;
+  border-radius: 0.9375rem;
+  background: linear-gradient(to top, #F02aa6, #ff6f48);
+  box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.4);
 }
 
 body {
