@@ -7,4 +7,13 @@
     padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
     background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
     gap: $spacing-100;
+
+    &__container {
+        .course__cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: $spacing-400;
+        }
+    }
 }

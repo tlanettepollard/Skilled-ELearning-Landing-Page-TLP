@@ -428,6 +428,12 @@ footer .footer__container {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
   gap: 0.5rem;
 }
+.courses__container .course__cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
+  gap: 2rem;
+}
 
 body {
   font-family: "Plus Jakarta Sans", serif;
