@@ -488,7 +488,18 @@ footer .footer__container {
   color: #13183F;
 }
 .courses__container .course__cards .course__card .card__content--text {
+  padding-top: 1.5rem;
+  padding-bottom: 1.25rem;
   color: #83869A;
+}
+.courses__container .course__cards .course__card .card__content--link {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 6.5rem;
+  height: 1.75rem;
+  color: #f74780;
 }
 
 body {

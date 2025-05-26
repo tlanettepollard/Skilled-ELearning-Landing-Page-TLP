@@ -38,26 +38,35 @@
                     gap: $spacing-100;
                     top: 10%;
                 }
+
                 .card__content {
                     @include flex(column, center, flex-start);
                     padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
                     gap: $spacing-100;
                     border-radius: 15px;
-                    background:  #FFF;
+                    background: #FFF;
                     box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
 
                     &--heading {
-                       height: $spacing-300; 
-                       color: $blue-900;
+                        height: $spacing-300;
+                        color: $blue-900;
                     }
 
                     &--text {
-                        
+                        padding-top: $spacing-300;
+                        padding-bottom: $spacing-250;
                         color: $grey;
                     }
-                }
-            }
 
+                    &--link {
+                        @include flex(row, center, center);
+                        width: 6.5rem;
+                        height: 1.75rem;
+                        color: $pink-600;
+                    }
+                }
+
+            }
         }
     }
 }
