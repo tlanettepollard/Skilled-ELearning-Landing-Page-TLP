@@ -65,15 +65,30 @@
                     background: #FFF;
                     box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
 
+                    @include bp-md-tablet {
+                        flex: 1 0 0;
+                    }
+
                     &--heading {
                         height: $spacing-300;
                         color: $blue-900;
+
+                        @include bp-md-tablet {
+                            align-self: stretch;
+                            font-size: 1.25rem;
+                        }
                     }
 
                     &--text {
                         padding-top: $spacing-300;
                         padding-bottom: $spacing-250;
                         color: $grey;
+
+                        @include bp-md-tablet {
+                            flex: 1 0 0;
+                            align-self: stretch;
+                            font-size: 1.125rem;
+                        }
                     }
 
                     &--link {
