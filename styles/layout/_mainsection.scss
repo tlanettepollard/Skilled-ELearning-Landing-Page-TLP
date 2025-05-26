@@ -5,7 +5,6 @@
     @include flex(column, center, center);
     align-self: stretch;
     padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
-    background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
     gap: $spacing-100;
 
     @include bp-md-tablet {

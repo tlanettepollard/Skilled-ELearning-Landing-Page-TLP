@@ -1,72 +1,62 @@
 @use '../abstracts' as *;
 
-
-// Header Font
-$header-font-family: "Plus Jakarta Sans",
+// Page Font
+$page-font-family: "Plus Jakarta Sans",
     serif;
-$h1-text-size: 3.5rem;
-$h2-text-size: 2.5rem;
-$h3-text-size: 2rem;
-$h4-text-size: 1.5rem;
-
-
-// Body Font 
-$body-font: "Plus Jakarta Sans",
-    serif;
-$body-text-size-1: 1.125rem;
-$body-text-size-2: 1rem;
-
-
 
 //Styles
 h1,
 h2,
 h3,
-h4 {
+h4,
+p {
     font-family: $header-font-family;
 }
 
-h1 {
-    font-size: $h3-text-size;
-    line-height: 1.25;
-    font-weight: 900;
-
-    @include bp-lg-tablet {
-        font-size: $h1-text-size;
-    }
-}
-
-h2 {
-    font-size: $h4-text-size;
-    line-height: 1.333;
-    font-weight: 900;
-    color: $white;
-
-    @include bp-lg-tablet {
-        font-size: $h2-text-size;
-    }
-}
-
-h3 {
-    font-size: $body-text-size-1;
+.text-preset-1 {
+    font-size: 3.5rem;
     line-height: 120%;
-    font-weight: 900;
-
-    @include bp-lg-tablet {
-        font-size: $h3-text-size;
-    }
-
+    font-weight: 800;
 }
 
-h4 {
-    font-size: $h4-text-size;
+.text-preset-2 {
+    font-size: 2.5rem;
     line-height: 120%;
-    font-weight: 900;
+    font-weight: 800;
 }
 
-p {
-    font-family: $body-font;
-    font-size: $body-text-size-2;
+.text-preset-3 {
+    font-size: 2rem;
+    line-height: 120%;
+    font-weight: 800;
+}
+
+.text-preset-4a {
+    font-size: 1.5rem;
+    line-height: 120%;
+    font-weight: 800;
+}
+
+.text-preset-4b {
+    font-size: 1.25rem;
+    line-height: 120%;
+    font-weight: 800;
+}
+
+.text-preset-5 {
+    font-size: 1.125rem;
+    line-height: 150%;
+    font-weight: 500;
+}
+
+.text-preset-6 {
+    font-size: 1rem;
+    line-height: 150%;
+    font-weight: 700;
+}
+
+.text-preset-7 {
+    font-size: 1.125rem;
     line-height: 150%;
     font-weight: 700;
 }
