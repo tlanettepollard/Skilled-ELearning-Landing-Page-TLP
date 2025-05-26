@@ -8,6 +8,10 @@
     background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
     gap: $spacing-100;
 
+    @include bp-md-tablet {
+        padding: $spacing-800 $spacing-550 $spacing-1800 $spacing-550;
+    }
+
     &__container {
         .course__cards {
             max-width: 70rem;
@@ -16,6 +20,11 @@
             grid-template-rows: 1fr;
             gap: $spacing-400;
 
+            @include bp-md-tablet {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 3fr;
+            }
+
             .intro__heading {
                 @include flex(column, center, flex-start);
                 align-self: stretch;
@@ -23,6 +32,13 @@
                 border-radius: .9375rem;
                 @include gradient(to top, $list1);
                 box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
+
+                @include bp-md-tablet {
+                    margin-top: 3.125rem;
+                    padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
+                    justify-content: flex-start;
+                }
+
             }
 
             .course__card {
@@ -30,6 +46,8 @@
                 height: auto;
                 @include flex(column, center, flex-start);
                 align-self: stretch;
+
+
 
                 &--logo {
                     position: relative;
