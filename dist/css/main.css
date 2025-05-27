@@ -347,15 +347,17 @@ footer .footer__container {
   }
 }
 
-.hero__img {
-  position: absolute;
-  background-image: url("/assets/image-hero-tablet.png");
-  background-repeat: no-repeat;
-  background-position: bottom left;
-  top: 0;
-  right: 0;
-  width: 50%;
-  height: 62vh;
+@media screen and (min-width: 768px) {
+  .hero__img {
+    position: absolute;
+    background-image: url("/assets/image-hero-tablet.png");
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 62vh;
+  }
 }
 
 .courses {
