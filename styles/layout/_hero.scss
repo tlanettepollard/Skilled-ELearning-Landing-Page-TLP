@@ -2,6 +2,7 @@
 @use '../base' as *;
 
 .hero {
+    position: relative;
     @include flex(column, center, center);
     align-self: stretch;
     gap: $spacing-100;
@@ -26,7 +27,8 @@
             gap: $spacing-100;
 
             @include bp-md-tablet {
-                width: 40%;
+                gap: $spacing-500;
+                width: 50%;
             }
 
             &--title {
@@ -59,4 +61,17 @@
 
         }
     }
+}
+
+.hero__img {
+    position: absolute;
+    background-image: url('/assets/image-hero-tablet.png');
+    background-repeat: no-repeat;
+    background-position: bottom left;
+   top: 0;
+    right: 0;
+    width: 50%;
+    height: 62vh;
+
+
 }

@@ -279,6 +279,7 @@ footer .footer__container {
 }
 
 .hero {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -315,7 +316,8 @@ footer .footer__container {
 }
 @media screen and (min-width: 768px) {
   .hero__container .hero__content {
-    width: 40%;
+    gap: 2.5rem;
+    width: 50%;
   }
 }
 .hero__container .hero__content--title {
@@ -343,6 +345,17 @@ footer .footer__container {
   .hero__container .hero__img--mobile {
     display: none;
   }
+}
+
+.hero__img {
+  position: absolute;
+  background-image: url("/assets/image-hero-tablet.png");
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 62vh;
 }
 
 .courses {
@@ -471,6 +484,7 @@ footer .footer__container {
 }
 
 body {
+  position: relative;
   font-family: "Plus Jakarta Sans", serif;
   line-height: 150%;
   font-weight: 400;
