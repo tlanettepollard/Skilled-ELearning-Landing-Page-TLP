@@ -353,8 +353,7 @@ footer .footer__container {
     background-image: url("/assets/image-hero-tablet.png");
     background-repeat: no-repeat;
     background-position: bottom left;
-    top: 0;
-    right: 0;
+    transform: translateX(100%);
     width: 50%;
     height: 62vh;
   }
