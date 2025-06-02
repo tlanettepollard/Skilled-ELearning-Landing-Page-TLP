@@ -63,14 +63,14 @@
     }
 }
 
+// Placed hero image for tablet & desktop outside of hero container near body tag
+
 .hero__img {
     @include bp-md-tablet {
         position: absolute;
         background-image: url('/assets/image-hero-tablet.png');
         background-repeat: no-repeat;
         background-position: bottom left;
-        //top: 0;
-        //right: 0;
         transform: translateX(100%);
         width: 50%;
         height: 62vh;
