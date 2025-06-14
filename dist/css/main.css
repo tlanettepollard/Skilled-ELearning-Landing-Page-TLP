@@ -293,6 +293,11 @@ footer .footer__container {
     padding: 4rem 2.75rem;
   }
 }
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding: 4rem 5rem;
+  }
+}
 .hero__container {
   display: flex;
   flex-direction: column;
@@ -389,12 +394,17 @@ footer .footer__container {
   .courses__container .course__cards {
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 3fr;
+    row-gap: 2rem;
+    -moz-column-gap: 1.5rem;
+         column-gap: 1.5rem;
   }
 }
 @media screen and (min-width: 1200px) {
   .courses__container .course__cards {
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 2fr;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
   }
 }
 .courses__container .course__cards .intro__heading {
