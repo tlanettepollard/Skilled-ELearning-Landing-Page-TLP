@@ -7,6 +7,10 @@
     width: 100%;
     z-index: 1;
 
+    @include bp-xl-desktop {
+        padding: $spacing-300 $spacing-1000;
+    }
+
     &__container {
         @include flex(row, space-between, center);
         height: 5rem;
