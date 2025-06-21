@@ -189,6 +189,12 @@ a:link {
     padding: 0.75rem 1.5rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .header__btn {
+    width: 10.5rem;
+    height: 3.6875rem;
+  }
+}
 
 .header__btn:hover {
   background-color: #666ca3;

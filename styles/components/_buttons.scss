@@ -44,6 +44,11 @@ a:link {
         font-size: 1.125rem;
         padding: $spacing-150 $spacing-300;
     }
+
+    @include bp-xxl-desktop {
+        width: 10.5rem;
+        height: 3.6875rem;
+    }
 }
 
 .header__btn:hover {
