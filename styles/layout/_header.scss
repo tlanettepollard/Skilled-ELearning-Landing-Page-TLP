@@ -5,10 +5,11 @@
 .header {
     //position: absolute;
     width: 100%;
-    //z-index: 1;
+    z-index: 1;
     @include flex(column, center, center);
     padding: $spacing-200 $spacing-250;
     gap: $spacing-1600;
+    align-self: stretch;
 
     @include bp-md-tablet {
         padding: $spacing-300 $spacing-550;
@@ -20,10 +21,12 @@
     }
 
     &__container {
+        width: 100%;
+        max-width: 90%;
         height: 5rem;
         @include flex(row, space-between, center);
         align-self: stretch;
-        
+
     }
 
 
