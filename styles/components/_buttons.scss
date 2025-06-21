@@ -33,6 +33,17 @@ a:link {
 // Header Button
 .header__btn {
     background-color: $header-btn;
+    gap: $spacing-100;
+    padding: $spacing-200 $spacing-400;
+    width: 10.5rem;
+    height: 3.6875rem;
+
+    @include bp-md-tablet {
+        width: 9.5rem;
+        height: 3rem;
+        font-size: 1.125rem;
+        padding: $spacing-150 $spacing-300;
+    }
 }
 
 .header__btn:hover {

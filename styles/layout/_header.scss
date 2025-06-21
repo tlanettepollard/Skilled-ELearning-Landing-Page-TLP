@@ -3,27 +3,28 @@
 
 
 .header {
-    position: absolute;
+    //position: absolute;
     width: 100%;
-    z-index: 1;
+    //z-index: 1;
+    @include flex(column, center, center);
+    padding: $spacing-200 $spacing-250;
+    gap: $spacing-1600;
 
-    @include bp-xl-desktop {
+    @include bp-md-tablet {
+        padding: $spacing-300 $spacing-550;
+    }
+
+    @include bp-xxl-desktop {
         padding: $spacing-300 $spacing-1000;
+        gap: $spacing-1600;
     }
 
     &__container {
-        @include flex(row, space-between, center);
         height: 5rem;
-
-        @include bp-md-tablet {
-            height: 6rem;
-        }
-
-        @include bp-lg-tablet {
-            height: 6.5rem;
-        }
-
+        @include flex(row, space-between, center);
+        align-self: stretch;
     }
+
 
 
 }
