@@ -176,6 +176,18 @@ a:link {
 
 .header__btn {
   background-color: #13183F;
+  gap: 0.5rem;
+  padding: 1rem 2rem;
+  width: 10.5rem;
+  height: 3.6875rem;
+}
+@media screen and (min-width: 768px) {
+  .header__btn {
+    width: 9.5rem;
+    height: 3rem;
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem;
+  }
 }
 
 .header__btn:hover {
@@ -256,31 +268,32 @@ footer .footer__container {
 }
 
 .header {
-  position: absolute;
   width: 100%;
-  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 1.25rem;
+  gap: 8rem;
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 768px) {
+  .header {
+    padding: 1.5rem 2.75rem;
+  }
+}
+@media screen and (min-width: 1400px) {
   .header {
     padding: 1.5rem 5rem;
+    gap: 8rem;
   }
 }
 .header__container {
+  height: 5rem;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  height: 5rem;
-}
-@media screen and (min-width: 768px) {
-  .header__container {
-    height: 6rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .header__container {
-    height: 6.5rem;
-  }
+  align-self: stretch;
 }
 
 .hero {
