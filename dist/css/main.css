@@ -275,12 +275,14 @@ footer .footer__container {
 
 .header {
   width: 100%;
+  z-index: 1;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   padding: 1rem 1.25rem;
   gap: 8rem;
+  align-self: stretch;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -294,6 +296,8 @@ footer .footer__container {
   }
 }
 .header__container {
+  width: 100%;
+  max-width: 90%;
   height: 5rem;
   display: flex;
   flex-direction: row;
@@ -317,7 +321,7 @@ footer .footer__container {
     padding: 4rem 2.75rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .hero {
     padding: 4rem 5rem;
   }
@@ -336,17 +340,28 @@ footer .footer__container {
     gap: 1.5rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .hero__container {
+    height: 35rem;
+  }
+}
 .hero__container .hero__content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: start;
   gap: 0.5rem;
+  max-width: 70rem;
 }
 @media screen and (min-width: 768px) {
   .hero__container .hero__content {
     gap: 2.5rem;
     width: 50%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__container .hero__content {
+    width: 40%;
   }
 }
 .hero__container .hero__content--title {
@@ -357,8 +372,18 @@ footer .footer__container {
     font-size: 2.5rem;
   }
 }
+@media screen and (min-width: 1400px) {
+  .hero__container .hero__content--title {
+    font-size: 3.5rem;
+  }
+}
 .hero__container .hero__content--text {
   color: #83869A;
+}
+@media screen and (min-width: 1400px) {
+  .hero__container .hero__content--text {
+    width: 28.5625rem;
+  }
 }
 .hero__container .hero__img--mobile {
   background-image: url("/assets/image-hero-mobile.png");
@@ -382,9 +407,22 @@ footer .footer__container {
     background-image: url("/assets/image-hero-tablet.png");
     background-repeat: no-repeat;
     background-position: bottom left;
-    transform: translateX(100%);
+    right: 0;
     width: 50%;
-    height: 62vh;
+    height: 64dvh;
+  }
+}
+@media screen and (min-width: 992px) {
+  .hero__img {
+    height: 50dvh;
+    right: -10%;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .hero__img {
+    background-image: url("/assets/image-hero-desktop.png");
+    height: 78vh;
+    right: -10%;
   }
 }
 
@@ -402,7 +440,7 @@ footer .footer__container {
     padding: 4rem 2.75rem 9rem 2.75rem;
   }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1400px) {
   .courses {
     padding: 4rem 5rem 9rem 5rem;
     margin: auto;

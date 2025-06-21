@@ -12,7 +12,7 @@
         padding: $spacing-800 $spacing-550;
     }
 
-    @include bp-xl-desktop {
+    @include bp-xxl-desktop {
         padding: $spacing-800 $spacing-1000;
     }
 
@@ -26,14 +26,26 @@
             gap: $spacing-300;
         }
 
+        @include bp-xxl-desktop {
+            height: 35rem;
+        }
+
+
         .hero__content {
             @include flex (column, center, start);
             gap: $spacing-100;
+            max-width: 70rem;
 
             @include bp-md-tablet {
                 gap: $spacing-500;
                 width: 50%;
             }
+
+            @include bp-xxl-desktop {
+                width: 40%;
+            }
+
+
 
             &--title {
                 color: $blue-900;
@@ -41,10 +53,18 @@
                 @include bp-md-tablet {
                     font-size: 2.5rem;
                 }
+
+                @include bp-xxl-desktop {
+                    font-size: 3.5rem;
+                }
             }
 
             &--text {
                 color: $grey;
+
+                @include bp-xxl-desktop {
+                    width: 28.5625rem;
+                }
             }
 
         }
@@ -75,9 +95,25 @@
         background-image: url('/assets/image-hero-tablet.png');
         background-repeat: no-repeat;
         background-position: bottom left;
-        transform: translateX(100%);
+        //transform: translateX(100%);
+        right: 0;
         width: 50%;
-        height: 62vh;
+        height: 64dvh;
     }
 
+    @include bp-lg-tablet {
+       height: 50dvh;
+       right: -10%;
+
+        //transform: translateX(118%);
+    }
+
+    @include bp-xxl-desktop {
+        background-image: url('/assets/image-hero-desktop.png');
+        //transform: translateX(110%);
+        height: 78vh;
+        right: -10%;
+        //background-position: -18px -180px;
+        //background-size: auto 120%;
+    }
 }
