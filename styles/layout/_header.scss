@@ -22,11 +22,17 @@
 
     &__container {
         width: 100%;
-        max-width: 90%;
         height: 5rem;
         @include flex(row, space-between, center);
         align-self: stretch;
 
+        @include bp-lg-tablet {
+            max-width: 95%;
+        }
+
+        @include bp-xxl-desktop {
+            max-width: 90%;
+        }
     }
 
 

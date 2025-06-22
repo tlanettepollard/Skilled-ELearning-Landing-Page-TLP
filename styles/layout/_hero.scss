@@ -102,8 +102,8 @@
     }
 
     @include bp-lg-tablet {
-       height: 50dvh;
-       right: -10%;
+       height: 38dvh;
+       right: -15%;
 
         //transform: translateX(118%);
     }
@@ -111,8 +111,8 @@
     @include bp-xxl-desktop {
         background-image: url('/assets/image-hero-desktop.png');
         //transform: translateX(110%);
-        height: 78vh;
-        right: -10%;
+        height: 72vh;
+        right: -8%;
         //background-position: -18px -180px;
         //background-size: auto 120%;
     }
