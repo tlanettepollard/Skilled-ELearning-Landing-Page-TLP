@@ -32,7 +32,7 @@
 
 
         .hero__content {
-            @include flex (column, center, start);
+            @include flex (column, center, flex-start);
             gap: $spacing-100;
             max-width: 70rem;
 
@@ -70,7 +70,7 @@
         }
 
         .hero__img--mobile {
-            background-image: url('/assets/image-hero-mobile.png');
+            background-image: url('/assets/image-hero-mobile.webp');
             background-repeat: no-repeat;
             background-position: center;
             background-size: 27.1875rem 25.5625rem;
@@ -88,32 +88,23 @@
 }
 
 // Placed hero image for tablet & desktop outside of hero container near body tag
-
 .hero__img {
+
     @include bp-md-tablet {
         position: absolute;
-        background-image: url('/assets/image-hero-tablet.png');
-        background-repeat: no-repeat;
-        background-position: bottom left;
-        //transform: translateX(100%);
+        z-index: 1;
+        width: auto;
+        height: auto;
         right: 0;
-        width: 50%;
-        height: 64dvh;
+        transform: translateX(40%);
+
+        /*background-image: url('/assets/image-hero-tablet.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom left 3.125rem;
+        //right: 0;
+        width: 60%;
+        height: 50dvh;*/
     }
 
-    @include bp-lg-tablet {
-       height: 38dvh;
-       right: -15%;
-
-        //transform: translateX(118%);
-    }
-
-    @include bp-xxl-desktop {
-        background-image: url('/assets/image-hero-desktop.png');
-        //transform: translateX(110%);
-        height: 72vh;
-        right: -8%;
-        //background-position: -18px -180px;
-        //background-size: auto 120%;
-    }
 }
