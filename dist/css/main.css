@@ -140,74 +140,66 @@ p {
   font-weight: 700;
 }
 
-.btn {
-  width: 10.5rem;
-  height: 3.6875rem;
-  font-size: 1rem;
-  font-weight: 700;
-  color: #ffffff;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  border-radius: 1.75rem;
-  -webkit-border-radius: 1.75rem;
-  -moz-border-radius: 1.75rem;
-  -ms-border-radius: 1.75rem;
-  -o-border-radius: 1.75rem;
-}
-@media screen and (min-width: 768px) {
-  .btn {
-    width: 9.5rem;
-    height: 3rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .btn {
+/*.btn {
     width: 10.5rem;
     height: 3.6875rem;
-    font-size: 1.125rem;
-  }
+    font-size: 1rem;
+    font-weight: 700;
+    color: $btn-font-color;
+    @include flex(row, center, center);
+    border-radius: 1.75rem;
+    -webkit-border-radius: 1.75rem;
+    -moz-border-radius: 1.75rem;
+    -ms-border-radius: 1.75rem;
+    -o-border-radius: 1.75rem;
+
+    @include bp-md-tablet {
+        width: 9.5rem;
+        height: 3rem;
+    }
+
+    @include bp-lg-tablet {
+        width: 10.5rem;
+        height: 3.6875rem;
+        font-size: 1.125rem;
+    }
+
 }
 
 a:link {
-  text-decoration: none;
-}
-
-.header__btn {
-  background-color: #13183F;
-  gap: 0.5rem;
-  padding: 1rem 2rem;
-  width: 10.5rem;
-  height: 3.6875rem;
-}
-@media screen and (min-width: 768px) {
-  .header__btn {
-    width: 9.5rem;
-    height: 3rem;
-    font-size: 1.125rem;
-    padding: 0.75rem 1.5rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .header__btn {
+    text-decoration: none;
+}*/
+/*.header__btn {
+    background-color: $header-btn;
+    gap: $spacing-100;
+    padding: $spacing-200 $spacing-400;
     width: 10.5rem;
     height: 3.6875rem;
-  }
+
+    @include bp-md-tablet {
+        width: 9.5rem;
+        height: 3rem;
+        font-size: 1.125rem;
+        padding: $spacing-150 $spacing-300;
+    }
+
+    @include bp-xxl-desktop {
+        width: 10.5rem;
+        height: 3.6875rem;
+    }
 }
 
 .header__btn:hover {
-  background-color: #666ca3;
-}
-
+    background-color: $blue-600;
+}*/
+/*
 .hero__btn {
-  background: linear-gradient(to top, #F02aa6, #ff6f48);
+    @include gradient(to top, $list1);
 }
 
 .footer__btn {
-  background: linear-gradient(to top, #4851ff, #f02aa6);
-}
-
+    @include gradient(to top, $list2);
+}*/
 .container {
   margin-left: auto;
   margin-right: auto;
@@ -248,317 +240,288 @@ a:link {
   }
 }
 
-footer {
-  background-color: #13183F;
-  padding-left: 1rem;
-  padding-right: 1rem;
-}
-@media screen and (min-width: 768px) {
-  footer {
-    padding-left: 2.75rem;
-    padding-right: 2.75rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  footer {
-    padding-left: 0rem;
-    padding-right: 0rem;
-  }
-}
-footer .footer__container {
-  height: 7.5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-}
+/*footer {
+    background-color: $blue-900;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
-.header {
-  width: 100%;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem 1.25rem;
-  gap: 8rem;
-  align-self: stretch;
-}
-@media screen and (min-width: 768px) {
-  .header {
-    padding: 1.5rem 2.75rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .header {
-    padding: 1.5rem 5rem;
-    gap: 8rem;
-  }
-}
-.header__container {
-  width: 100%;
-  height: 5rem;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
-  align-self: stretch;
-}
-@media screen and (min-width: 992px) {
-  .header__container {
-    max-width: 95%;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .header__container {
-    max-width: 90%;
-  }
-}
+    @include bp-md-tablet {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem;
+    }
 
-.hero {
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  gap: 0.5rem;
-  padding: 4rem 1.25rem;
-}
-@media screen and (min-width: 768px) {
-  .hero {
-    padding: 4rem 2.75rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .hero {
-    padding: 4rem 5rem;
-  }
-}
-.hero__container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-}
-@media screen and (min-width: 768px) {
-  .hero__container {
-    flex-direction: row;
-    justify-content: flex-start;
-    gap: 1.5rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .hero__container {
-    height: 35rem;
-  }
-}
-.hero__container .hero__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  gap: 0.5rem;
-  max-width: 70rem;
-}
-@media screen and (min-width: 768px) {
-  .hero__container .hero__content {
-    gap: 2.5rem;
-    width: 50%;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .hero__container .hero__content {
-    width: 40%;
-  }
-}
-.hero__container .hero__content--title {
-  color: #13183F;
-}
-@media screen and (min-width: 768px) {
-  .hero__container .hero__content--title {
-    font-size: 2.5rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .hero__container .hero__content--title {
-    font-size: 3.5rem;
-  }
-}
-.hero__container .hero__content--text {
-  color: #83869A;
-}
-@media screen and (min-width: 1400px) {
-  .hero__container .hero__content--text {
-    width: 28.5625rem;
-  }
-}
-.hero__container .hero__img--mobile {
-  background-image: url("/assets/image-hero-mobile.webp");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: 27.1875rem 25.5625rem;
-  height: 24.125rem;
-  width: 100%;
-  margin: auto;
-  margin-top: 3rem;
-}
-@media screen and (min-width: 768px) {
-  .hero__container .hero__img--mobile {
-    display: none;
-  }
-}
+    @include bp-xl-desktop {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
 
-@media screen and (min-width: 768px) {
-  .hero__img {
-    position: absolute;
+    .footer__container {
+        height: 7.5rem;
+        @include flex(row, space-between, center);
+    }
+}*/
+/*.header {
+    //position: absolute;
+    width: 100%;
     z-index: 1;
-    width: auto;
-    height: auto;
-    right: 0;
-    transform: translateX(40%);
-    /*background-image: url('/assets/image-hero-tablet.webp');
-    background-repeat: no-repeat;
-    background-size: contain;
-    background-position: bottom left 3.125rem;
-    //right: 0;
-    width: 60%;
-    height: 50dvh;*/
-  }
-}
-
-.courses {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  align-self: stretch;
-  padding: 4rem 1.25rem 5rem 1.25rem;
-  gap: 0.5rem;
-}
-@media screen and (min-width: 768px) {
-  .courses {
-    padding: 4rem 2.75rem 9rem 2.75rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .courses {
-    padding: 4rem 5rem 9rem 5rem;
-    margin: auto;
-  }
-}
-.courses__container .course__cards {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  gap: 2rem;
-}
-@media screen and (min-width: 768px) {
-  .courses__container .course__cards {
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 3fr;
-    row-gap: 2rem;
-    -moz-column-gap: 1.5rem;
-         column-gap: 1.5rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .courses__container .course__cards {
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 2fr;
-    -moz-column-gap: 2rem;
-         column-gap: 2rem;
-  }
-}
-.courses__container .course__cards .intro__heading {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-  padding: 2rem;
-  border-radius: 0.9375rem;
-  background: linear-gradient(to top, #F02aa6, #ff6f48);
-  box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.4);
-}
-@media screen and (min-width: 768px) {
-  .courses__container .course__cards .intro__heading {
-    margin-top: 3.125rem;
-    padding: 4rem 2rem 2.5rem 2rem;
-    justify-content: flex-start;
-  }
-}
-.courses__container .course__cards .intro__heading--title {
-  color: #ffffff;
-}
-.courses__container .course__cards .course__card {
-  position: relative;
-  width: 100%;
-  height: auto;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  align-self: stretch;
-}
-.courses__container .course__cards .course__card--logo {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 2rem;
-  gap: 0.5rem;
-  z-index: 1;
-  transform: translateY(30px);
-}
-.courses__container .course__cards .course__card .card__content {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding: 4rem 2rem 2.5rem 2rem;
-  gap: 0.5rem;
-  border-radius: 15px;
-  background: #FFF;
-  filter: drop-shadow(2px 4px 8px #585858);
-}
-@media screen and (min-width: 768px) {
-  .courses__container .course__cards .course__card .card__content {
-    flex: 1 0 0;
-  }
-}
-.courses__container .course__cards .course__card .card__content--heading {
-  height: 1.5rem;
-  color: #13183F;
-}
-@media screen and (min-width: 768px) {
-  .courses__container .course__cards .course__card .card__content--heading {
+    @include flex(column, center, center);
+    padding: $spacing-200 $spacing-250;
+    gap: $spacing-1600;
     align-self: stretch;
-  }
-}
-.courses__container .course__cards .course__card .card__content--text {
-  padding-top: 1.5rem;
-  padding-bottom: 1.25rem;
-  color: #83869A;
-}
-@media screen and (min-width: 768px) {
-  .courses__container .course__cards .course__card .card__content--text {
-    flex: 1 0 0;
-    align-self: stretch;
-    font-size: 1.125rem;
-  }
-}
-.courses__container .course__cards .course__card .card__content--link {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  width: 6.5rem;
-  height: 1.75rem;
-  color: #f74780;
-}
 
+    @include bp-md-tablet {
+        padding: $spacing-300 $spacing-550;
+    }
+
+    @include bp-xxl-desktop {
+        padding: $spacing-300 $spacing-1000;
+        gap: $spacing-1600;
+    }
+
+    &__container {
+        width: 100%;
+        height: 5rem;
+        @include flex(row, space-between, center);
+        align-self: stretch;
+
+        @include bp-lg-tablet {
+            max-width: 95%;
+        }
+
+        @include bp-xxl-desktop {
+            max-width: 90%;
+        }
+    }
+
+
+
+}*/
+/*.hero {
+    position: relative;
+    @include flex(column, center, center);
+    align-self: stretch;
+    gap: $spacing-100;
+    padding: $spacing-800 $spacing-250;
+
+    @include bp-md-tablet {
+        padding: $spacing-800 $spacing-550;
+    }
+
+    @include bp-xxl-desktop {
+        padding: $spacing-800 $spacing-1000;
+    }
+
+    &__container {
+        @include flex (column, center, center);
+        align-self: stretch;
+
+        @include bp-md-tablet {
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: $spacing-300;
+        }
+
+        @include bp-xxl-desktop {
+            height: 35rem;
+        }
+
+
+        .hero__content {
+            @include flex (column, center, flex-start);
+            gap: $spacing-100;
+            max-width: 70rem;
+
+            @include bp-md-tablet {
+                gap: $spacing-500;
+                width: 50%;
+            }
+
+            @include bp-xxl-desktop {
+                width: 40%;
+            }
+
+
+
+            &--title {
+                color: $blue-900;
+
+                @include bp-md-tablet {
+                    font-size: 2.5rem;
+                }
+
+                @include bp-xxl-desktop {
+                    font-size: 3.5rem;
+                }
+            }
+
+            &--text {
+                color: $grey;
+
+                @include bp-xxl-desktop {
+                    width: 28.5625rem;
+                }
+            }
+
+        }
+
+        .hero__img--mobile {
+            background-image: url('/assets/image-hero-mobile.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 27.1875rem 25.5625rem;
+            height: 24.125rem;
+            width: 100%;
+            margin: auto;
+            margin-top: $spacing-600;
+
+            @include bp-md-tablet {
+                display: none;
+            }
+
+        }
+    }
+}
+*/
+/*.hero__img {
+
+    @include bp-md-tablet {
+        position: absolute;
+        z-index: 1;
+        width: auto;
+        height: auto;
+        right: 0;
+        transform: translateX(40%);
+
+        /*background-image: url('/assets/image-hero-tablet.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom left 3.125rem;
+        //right: 0;
+        width: 60%;
+        height: 50dvh;
+    }
+
+}
+*/
+/*.courses {
+    @include flex(column, center, center);
+    align-self: stretch;
+    padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
+    gap: $spacing-100;
+
+    @include bp-md-tablet {
+        padding: $spacing-800 $spacing-550 $spacing-1800 $spacing-550;
+    }
+
+    @include bp-xxl-desktop {
+        padding: $spacing-800 $spacing-1000 $spacing-1800 $spacing-1000;
+        margin: auto;
+    }
+
+    &__container {
+        .course__cards {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 1fr;
+            gap: $spacing-400;
+
+            @include bp-md-tablet {
+                grid-template-columns: 1fr 1fr;
+                grid-template-rows: 3fr;
+                row-gap: $spacing-400;
+                column-gap: $spacing-300;
+            }
+
+            @include bp-xl-desktop {
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 2fr;
+                column-gap: $spacing-400;
+            }
+
+            .intro__heading {
+                @include flex(column, center, flex-start);
+                align-self: stretch;
+                padding: $spacing-400;
+                border-radius: .9375rem;
+                @include gradient(to top, $list1);
+                box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
+
+
+                @include bp-md-tablet {
+                    margin-top: 3.125rem;
+                    padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
+                    justify-content: flex-start;
+                }
+
+                &--title {
+                    color: #ffffff;
+                }
+
+            }
+
+            .course__card {
+                position: relative;
+                width: 100%;
+                height: auto;
+                @include flex(column, center, flex-start);
+                align-self: stretch;
+
+
+
+                &--logo {
+                    @include flex (row, center, flex-start);
+                    padding-left: $spacing-400;
+                    gap: $spacing-100;
+                    z-index: 1;
+                    transform: translateY(30px);
+                }
+
+                .card__content {
+                    @include flex(column, center, flex-start);
+                    padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
+                    gap: $spacing-100;
+                    border-radius: 15px;
+                    background: #FFF;
+                    //box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
+                    filter: drop-shadow(2px 4px 8px #585858);
+
+                    @include bp-md-tablet {
+                        flex: 1 0 0;
+                    }
+
+                    &--heading {
+                        height: $spacing-300;
+                        color: $blue-900;
+
+                        @include bp-md-tablet {
+                            align-self: stretch;
+                        }
+                    }
+
+                    &--text {
+                        padding-top: $spacing-300;
+                        padding-bottom: $spacing-250;
+                        color: $grey;
+
+                        @include bp-md-tablet {
+                            flex: 1 0 0;
+                            align-self: stretch;
+                            font-size: 1.125rem;
+                        }
+                    }
+
+                    &--link {
+                        @include flex(row, center, center);
+                        width: 6.5rem;
+                        height: 1.75rem;
+                        color: $pink-600;
+                    }
+                }
+
+            }
+        }
+    }
+}*/
 body {
   position: relative;
   font-family: "Plus Jakarta Sans", serif;

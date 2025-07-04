@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-footer {
+/*footer {
     background-color: $blue-900;
     padding-left: 1rem;
     padding-right: 1rem;
@@ -20,4 +20,4 @@ footer {
         height: 7.5rem;
         @include flex(row, space-between, center);
     }
-}
+}*/
