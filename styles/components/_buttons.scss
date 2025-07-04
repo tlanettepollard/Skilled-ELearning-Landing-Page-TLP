@@ -1,6 +1,6 @@
 @use '../abstracts' as *;
 
-.btn {
+/*.btn {
     width: 10.5rem;
     height: 3.6875rem;
     font-size: 1rem;
@@ -28,10 +28,10 @@
 
 a:link {
     text-decoration: none;
-}
+}*/
 
 // Header Button
-.header__btn {
+/*.header__btn {
     background-color: $header-btn;
     gap: $spacing-100;
     padding: $spacing-200 $spacing-400;
@@ -53,13 +53,14 @@ a:link {
 
 .header__btn:hover {
     background-color: $blue-600;
-}
+}*/
 
 // Hero Button
+/*
 .hero__btn {
     @include gradient(to top, $list1);
 }
 
 .footer__btn {
     @include gradient(to top, $list2);
-}
+}*/

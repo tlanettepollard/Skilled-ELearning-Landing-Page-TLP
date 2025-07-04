@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-.hero {
+/*.hero {
     position: relative;
     @include flex(column, center, center);
     align-self: stretch;
@@ -86,9 +86,11 @@
         }
     }
 }
+*/
 
 // Placed hero image for tablet & desktop outside of hero container near body tag
-.hero__img {
+
+/*.hero__img {
 
     @include bp-md-tablet {
         position: absolute;
@@ -104,7 +106,8 @@
         background-position: bottom left 3.125rem;
         //right: 0;
         width: 60%;
-        height: 50dvh;*/
+        height: 50dvh;
     }
 
 }
+*/

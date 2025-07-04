@@ -1,7 +1,7 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-.courses {
+/*.courses {
     @include flex(column, center, center);
     align-self: stretch;
     padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
@@ -119,4 +119,4 @@
             }
         }
     }
-}
+}*/
