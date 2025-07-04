@@ -200,46 +200,39 @@ a:link {
 .footer__btn {
     @include gradient(to top, $list2);
 }*/
-.container {
-  margin-left: auto;
-  margin-right: auto;
-}
-@media screen and (max-width: 375px) {
-  .container {
-    width: 100%;
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-}
-@media screen and (min-width: 576px) {
-  .container {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-@media screen and (min-width: 768px) {
-  .container {
-    width: 43.0625rem;
-    padding-left: 0rem;
-    padding-right: 0rem;
-  }
-}
-@media screen and (min-width: 992px) {
-  .container {
-    width: 55.75rem;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .container {
-    width: 70rem;
-  }
-}
-@media screen and (min-width: 1400px) {
-  .container {
-    width: 90%;
-  }
-}
+/*.container {
+    margin-left: auto;
+    margin-right: auto;
 
+    @include bp-xs-mobile {
+        width: 100%; 
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    @include bp-sm-mobile {
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    @include bp-md-tablet {
+        width: 43.0625rem; 
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    @include bp-lg-tablet {
+        width: 55.75rem;
+    }
+
+    @include bp-xl-desktop {
+        width: 70rem;
+    }
+
+    @include bp-xxl-desktop {
+        width: 90%;
+    }
+}*/
 /*footer {
     background-color: $blue-900;
     padding-left: 1rem;
@@ -259,42 +252,6 @@ a:link {
         height: 7.5rem;
         @include flex(row, space-between, center);
     }
-}*/
-/*.header {
-    //position: absolute;
-    width: 100%;
-    z-index: 1;
-    @include flex(column, center, center);
-    padding: $spacing-200 $spacing-250;
-    gap: $spacing-1600;
-    align-self: stretch;
-
-    @include bp-md-tablet {
-        padding: $spacing-300 $spacing-550;
-    }
-
-    @include bp-xxl-desktop {
-        padding: $spacing-300 $spacing-1000;
-        gap: $spacing-1600;
-    }
-
-    &__container {
-        width: 100%;
-        height: 5rem;
-        @include flex(row, space-between, center);
-        align-self: stretch;
-
-        @include bp-lg-tablet {
-            max-width: 95%;
-        }
-
-        @include bp-xxl-desktop {
-            max-width: 90%;
-        }
-    }
-
-
-
 }*/
 /*.hero {
     position: relative;
@@ -521,6 +478,42 @@ a:link {
             }
         }
     }
+}*/
+/*.header {
+    //position: absolute;
+    width: 100%;
+    z-index: 1;
+    @include flex(column, center, center);
+    padding: $spacing-200 $spacing-250;
+    gap: $spacing-1600;
+    align-self: stretch;
+
+    @include bp-md-tablet {
+        padding: $spacing-300 $spacing-550;
+    }
+
+    @include bp-xxl-desktop {
+        padding: $spacing-300 $spacing-1000;
+        gap: $spacing-1600;
+    }
+
+    &__container {
+        width: 100%;
+        height: 5rem;
+        @include flex(row, space-between, center);
+        align-self: stretch;
+
+        @include bp-lg-tablet {
+            max-width: 95%;
+        }
+
+        @include bp-xxl-desktop {
+            max-width: 90%;
+        }
+    }
+
+
+
 }*/
 body {
   position: relative;
