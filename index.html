@@ -36,75 +36,83 @@
 
     <main>
       <!-- Hero -->
-      <section class="hero">
-        <div class="hero__container container">
-          <div class="hero__content">
-            <h1 class="hero__content--title text-preset-3">Maximize skill, minimize budget</h1>
-            <p class="hero__content--text text-preset-5">Our modern courses across a range of in-demand skills will give
-              you the
-              knowledge you need to live the life you want.</p>
-            <a href="#" class="btn hero__btn">Get Started</a>
-          </div>
-          <div class="hero__img--mobile">
+      <section id="hero">
+        <div class="container">
+          <div class="hero-content-container">
+            <div class="hero-text">
+              <h1 class="text-preset-3">Maximize skill, minimize budget</h1>
+              <p class="hero__content--text text-preset-5">Our modern courses across a range of in-demand skills will
+                give you the knowledge you need to live the life you want.</p>
+              <a href="#">
+                <button class="hero-btn">Get Started</button>
+              </a>
+            </div>
+            <!-- Hero Images -->
+            <div class="hero-desktop-img"></div>
+            <div class="hero-tablet-img"></div>
+            <div class="hero-mobile-img"></div>
           </div>
         </div> <!-- Hero Container -->
       </section>
 
       <!-- Courses -->
       <section class="courses">
-        <div class="courses__container container">
-          <!-- Course Cards -->
-          <div class="course__cards">
-            <div class="intro__heading">
-              <h2 class="intro__heading--title text-preset-4a">Check out our most popular courses!</h2>
-            </div>
-            <div class="course__card">
-              <img src="./assets/icon-animation.svg" class="course__card--logo" alt="icon animation">
-              <div class="card__content">
-                <h3 class="card__content--heading  text-preset-4b">Animation
-                </h3>
-                <p class="card__content--text text-preset-6">Learn the latest animation techniques to create stunning
-                  motion
-                  design and captivate your audience.
-                </p>
-                <a href="#" class="card__content--link text-preset-7">Get Started</a>
-              </div>
-            </div>
+        <div class="container">
+          <div class="courses-content-container">
+            <!-- Course Cards -->
+            <div class="course__card" id="gradient-card">
+              <h2 class="text-preset-4a">Check out our most popular courses!</h2>
+            </div><!-- Intro Card -->
 
-            <div class="course__card">
-              <img src="./assets/icon-design.svg" class="course__card--logo" alt="icon design">
-              <div class="card__content">
-                <h3 class="card__content--heading text-preset-4b">Design
-                </h3>
-                <p class="card__content--text text-preset-6">Create beautiful, usable interfaces to help shape the
-                  future
-                  of
-                  how the web looks.
-                </p>
-                <a href="#" class="card__content--link text-preset-7">Get Started</a>
+            <div class="course-card">
+              <div class="course-card-icon">
+                <img src="./assets/icon-animation.svg" alt="animation icon">
               </div>
-            </div>
-
-            <div class="course__card">
-              <img src="./assets/icon-photography.svg" class="course__card--logo" alt="icon photography">
-              <div class="card__content">
-                <h3 class="card__content--heading text-preset-4b">Photography
+              <div class="course-card-text">
+                <h3 class="text-preset-4b">Animation
                 </h3>
-                <p class="card__content--text text-preset-6">Explore critical fundamentals like lighting, composition,
-                  and
-                  focus
+                <p class="text-preset-6">Learn the latest animation techniques to create stunning motion design and
+                  captivate your audience.
+                </p>
+                <a href="#" class="course-card-link text-preset-7">Get Started</a>
+              </div>
+            </div> <!--Animation Card -->
+
+            <div class="course-card">
+              <div class="course-card-icon">
+                <img src="./assets/icon-design.svg" alt="design icon">
+              </div>
+              <div class="course-card-text">
+                <h3 class="text-preset-4b">Design
+                </h3>
+                <p class="text-preset-6">Create beautiful, usable interfaces to help shape the future of how the web
+                  looks.
+                </p>
+                <a href="#" class="course-card-link text-preset-7">Get Started</a>
+              </div>
+            </div><!-- Design Card -->
+
+            <div class="course-card">
+              <div class="course-card-icon">
+                <img src="./assets/icon-photography.svg" alt="photography icon">
+              </div>
+              <div class="course-card-text">
+                <h3 class="text-preset-4b">Photography
+                </h3>
+                <p class="text-preset-6">Explore critical fundamentals like lighting, composition, and focus
                   to capture exceptional photos.
                 </p>
-                <a href="#" class="card__content--link text-preset-7">Get Started</a>
+                <a href="#" class="course-card-link text-preset-7">Get Started</a>
               </div>
-            </div>
+            </div> <!-- Photography Card -->
 
             <div class="course__card">
               <img src="./assets/icon-crypto.svg" class="course__card--logo" alt="icon crypto">
               <div class="card__content">
                 <h3 class="card__content--heading text-preset-4b">Crypto
                 </h3>
-                <p class="card__content--text text-preset-6">All you need to know to get started investing in crypto. Go
+                <p class="card__content--text text-preset-6">All you need to know to get started investing in crypto.
+                  Go
                   from beginner
                   to advanced with this 54 hour course.
                 </p>
@@ -124,9 +132,10 @@
                 <a href="#" class="card__content--link text-preset-7">Get Started</a>
               </div>
             </div>
-          </div> <!-- Course Cards -->
+          </div>
         </div> <!-- Courses Container -->
       </section>
+
     </main>
 
     <!-- Footer -->
