@@ -1,7 +1,11 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+.top-nav {
+    @include flex(row, space-between, center);
+    margin-top: 1rem;
 
+}
 
 
 
