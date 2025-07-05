@@ -1,6 +1,13 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+.container {
+    width: 90%;
+    max-width: 68.75rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*.container {
     margin-left: auto;
     margin-right: auto;

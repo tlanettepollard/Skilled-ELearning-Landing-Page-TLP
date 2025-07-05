@@ -50,11 +50,9 @@ body {
 }
 
 /* A elements that don't have a class get default styles */
-a:not([class]) {
-  -webkit-text-decoration-skip: ink;
-          text-decoration-skip-ink: auto;
-}
-
+/*a:not([class]) {
+    text-decoration-skip-ink: auto;
+}*/
 /* Make images easier to work with */
 img,
 picture {
@@ -200,6 +198,13 @@ a:link {
 .footer__btn {
     @include gradient(to top, $list2);
 }*/
+.container {
+  width: 90%;
+  max-width: 68.75rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 /*.container {
     margin-left: auto;
     margin-right: auto;
@@ -527,6 +532,11 @@ body {
 .overflow-wrapper {
   overflow-x: hidden;
   position: relative;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
 
 .logo {
