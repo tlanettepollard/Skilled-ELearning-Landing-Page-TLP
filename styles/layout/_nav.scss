@@ -1,7 +1,17 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+.top-nav {
+    position: relative;
+    z-index: 1;
+    @include flex(row, space-between, center);
+    margin-top: 1rem;
 
+}
+
+
+
+// Old code
 /*.header {
     //position: absolute;
     width: 100%;

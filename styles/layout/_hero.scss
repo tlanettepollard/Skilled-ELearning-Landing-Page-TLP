@@ -1,6 +1,35 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+.hero-content-container {
+    z-index: 2;
+    @include flex(row, space-between, center);
+    gap: $spacing-400;
+
+    .hero-text {
+        margin-top: 2rem;
+        width: 60%;
+
+        h1 {
+            color: $blue-900;
+        }
+
+        p {
+            color: $grey;
+        }
+    }
+
+    .hero-desktop-img {
+        margin-right: -33rem;
+        margin-top: -15rem;
+    }
+
+}
+
+
+
+
+
 /*.hero {
     position: relative;
     @include flex(column, center, center);
