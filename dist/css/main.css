@@ -524,6 +524,11 @@ body {
   background: linear-gradient(180deg, #ffffff 0%, #f0f1ff 100%);
 }
 
+.overflow-wrapper {
+  overflow-x: hidden;
+  position: relative;
+}
+
 .logo {
   width: 4.9556rem;
   height: 1.25rem;
