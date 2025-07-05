@@ -162,6 +162,18 @@ p {
   opacity: 0.8;
 }
 
+.hero-btn {
+  background: linear-gradient(to top, #F02aa6, #ff6f48);
+  gap: 0.5rem;
+  width: 10.5rem;
+  height: 3.6875rem;
+  color: #ffffff;
+  border-radius: 1.75rem;
+  border: none;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+
 /*.btn {
     width: 10.5rem;
     height: 3.6875rem;
@@ -262,133 +274,6 @@ a:link {
         width: 90%;
     }
 }*/
-/*footer {
-    background-color: $blue-900;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    @include bp-md-tablet {
-        padding-left: 2.75rem;
-        padding-right: 2.75rem;
-    }
-
-    @include bp-xl-desktop {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    .footer__container {
-        height: 7.5rem;
-        @include flex(row, space-between, center);
-    }
-}*/
-/*.hero {
-    position: relative;
-    @include flex(column, center, center);
-    align-self: stretch;
-    gap: $spacing-100;
-    padding: $spacing-800 $spacing-250;
-
-    @include bp-md-tablet {
-        padding: $spacing-800 $spacing-550;
-    }
-
-    @include bp-xxl-desktop {
-        padding: $spacing-800 $spacing-1000;
-    }
-
-    &__container {
-        @include flex (column, center, center);
-        align-self: stretch;
-
-        @include bp-md-tablet {
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: $spacing-300;
-        }
-
-        @include bp-xxl-desktop {
-            height: 35rem;
-        }
-
-
-        .hero__content {
-            @include flex (column, center, flex-start);
-            gap: $spacing-100;
-            max-width: 70rem;
-
-            @include bp-md-tablet {
-                gap: $spacing-500;
-                width: 50%;
-            }
-
-            @include bp-xxl-desktop {
-                width: 40%;
-            }
-
-
-
-            &--title {
-                color: $blue-900;
-
-                @include bp-md-tablet {
-                    font-size: 2.5rem;
-                }
-
-                @include bp-xxl-desktop {
-                    font-size: 3.5rem;
-                }
-            }
-
-            &--text {
-                color: $grey;
-
-                @include bp-xxl-desktop {
-                    width: 28.5625rem;
-                }
-            }
-
-        }
-
-        .hero__img--mobile {
-            background-image: url('/assets/image-hero-mobile.webp');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 27.1875rem 25.5625rem;
-            height: 24.125rem;
-            width: 100%;
-            margin: auto;
-            margin-top: $spacing-600;
-
-            @include bp-md-tablet {
-                display: none;
-            }
-
-        }
-    }
-}
-*/
-/*.hero__img {
-
-    @include bp-md-tablet {
-        position: absolute;
-        z-index: 1;
-        width: auto;
-        height: auto;
-        right: 0;
-        transform: translateX(40%);
-
-        /*background-image: url('/assets/image-hero-tablet.webp');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom left 3.125rem;
-        //right: 0;
-        width: 60%;
-        height: 50dvh;
-    }
-
-}
-*/
 /*.courses {
     @include flex(column, center, center);
     align-self: stretch;
@@ -508,6 +393,150 @@ a:link {
         }
     }
 }*/
+/*footer {
+    background-color: $blue-900;
+    padding-left: 1rem;
+    padding-right: 1rem;
+
+    @include bp-md-tablet {
+        padding-left: 2.75rem;
+        padding-right: 2.75rem;
+    }
+
+    @include bp-xl-desktop {
+        padding-left: 0rem;
+        padding-right: 0rem;
+    }
+
+    .footer__container {
+        height: 7.5rem;
+        @include flex(row, space-between, center);
+    }
+}*/
+.hero-content-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.hero-text {
+  margin-top: 2rem;
+}
+.hero-text h1 {
+  color: #13183F;
+}
+.hero-text p {
+  color: #83869A;
+}
+
+/*.hero {
+    position: relative;
+    @include flex(column, center, center);
+    align-self: stretch;
+    gap: $spacing-100;
+    padding: $spacing-800 $spacing-250;
+
+    @include bp-md-tablet {
+        padding: $spacing-800 $spacing-550;
+    }
+
+    @include bp-xxl-desktop {
+        padding: $spacing-800 $spacing-1000;
+    }
+
+    &__container {
+        @include flex (column, center, center);
+        align-self: stretch;
+
+        @include bp-md-tablet {
+            flex-direction: row;
+            justify-content: flex-start;
+            gap: $spacing-300;
+        }
+
+        @include bp-xxl-desktop {
+            height: 35rem;
+        }
+
+
+        .hero__content {
+            @include flex (column, center, flex-start);
+            gap: $spacing-100;
+            max-width: 70rem;
+
+            @include bp-md-tablet {
+                gap: $spacing-500;
+                width: 50%;
+            }
+
+            @include bp-xxl-desktop {
+                width: 40%;
+            }
+
+
+
+            &--title {
+                color: $blue-900;
+
+                @include bp-md-tablet {
+                    font-size: 2.5rem;
+                }
+
+                @include bp-xxl-desktop {
+                    font-size: 3.5rem;
+                }
+            }
+
+            &--text {
+                color: $grey;
+
+                @include bp-xxl-desktop {
+                    width: 28.5625rem;
+                }
+            }
+
+        }
+
+        .hero__img--mobile {
+            background-image: url('/assets/image-hero-mobile.webp');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: 27.1875rem 25.5625rem;
+            height: 24.125rem;
+            width: 100%;
+            margin: auto;
+            margin-top: $spacing-600;
+
+            @include bp-md-tablet {
+                display: none;
+            }
+
+        }
+    }
+}
+*/
+/*.hero__img {
+
+    @include bp-md-tablet {
+        position: absolute;
+        z-index: 1;
+        width: auto;
+        height: auto;
+        right: 0;
+        transform: translateX(40%);
+
+        /*background-image: url('/assets/image-hero-tablet.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: bottom left 3.125rem;
+        //right: 0;
+        width: 60%;
+        height: 50dvh;
+    }
+
+}
+*/
 .top-nav {
   display: flex;
   flex-direction: row;

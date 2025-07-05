@@ -1,8 +1,19 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+.hero-content-container {
+    @include flex(row, space-between, center);
+}
 
-
+.hero-text {
+    margin-top: 2rem;
+    h1 {
+        color: $blue-900;
+    }
+    p {
+        color: $grey;
+    }
+}
 
 
 
