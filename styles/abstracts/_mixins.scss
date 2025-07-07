@@ -9,6 +9,7 @@
 }
 
 // Media Mixins
+
 // Laptop 1400px
 @mixin bp-laptop {
     @media screen and (max-width: $laptop) {

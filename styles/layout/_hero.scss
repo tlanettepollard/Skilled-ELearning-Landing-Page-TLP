@@ -1,79 +1,105 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
-.hero-content-container {
-    z-index: 2;
-    @include flex(row, space-between, center);
-    gap: $spacing-400;
 
-    .hero-text {
-        margin-top: 2rem;
-        width: 60%;
-
-        h1 {
-            color: $blue-900;
-
-            @include bp-laptop {
-                font-size: 2.5rem;
-            }
-
-            @include bp-lg-tablet {
-                width: 90%;
-            }
-
-            @include bp-md-tablet {
-                width: 100%;
-            }
-        }
-
-        p {
-            color: $grey;
-            width: 77%;
-
-            @include bp-laptop {
-                width: 90%;
-            }
-
-            @include bp-lg-tablet {
-                width: 55%;
-            }
-
-            @include bp-md-tablet {
-                width: 100%;
-            }
-        }
+#hero {
+    @include bp-sm-tablet-one {
+        margin-top: 3rem;
     }
 
-    .hero-desktop-img {
-        margin-right: -33rem;
-        margin-top: -15rem;
+    .hero-content-container {
+        z-index: 2;
+        @include flex(row, space-between, center);
+        gap: $spacing-400;
 
-        @include bp-laptop {
+        @include bp-sm-tablet-one {
+            flex-direction: column;
+        }
+
+        .hero-text {
+            margin-top: 2rem;
+            width: 60%;
+
+            h1 {
+                color: $blue-900;
+
+                @include bp-laptop {
+                    font-size: 2.5rem;
+                }
+
+                @include bp-lg-tablet {
+                    width: 90%;
+                }
+
+                @include bp-md-tablet {
+                    width: 100%;
+                }
+
+                @include bp-sm-tablet-one {
+                    font-size: 2.5rem;
+                }
+            }
+
+            p {
+                color: $grey;
+                width: 77%;
+
+                @include bp-laptop {
+                    width: 90%;
+                }
+
+                @include bp-lg-tablet {
+                    width: 55%;
+                }
+
+                @include bp-md-tablet {
+                    width: 100%;
+                }
+            }
+        }
+
+        .hero-desktop-img {
+            margin-right: -33rem;
+            margin-top: -15rem;
+
+            @include bp-laptop {
+                display: none;
+            }
+
+        }
+
+        .hero-tablet-img {
             display: none;
+
+            @include bp-laptop {
+                display: block;
+                margin-right: -17rem;
+                margin-top: -6rem;
+            }
+
+            @include bp-xl-tablet {
+                margin-right: -20rem;
+            }
+
+            @include bp-sm-tablet-one {
+                display: none;
+            }
+
         }
 
-    }
+        .hero-mobile-img {
+            display: none;
 
-    .hero-tablet-img {
-        display: none;
+            @include bp-sm-tablet-one {
+                display: block;
+                margin-top: 2rem;
+            }
 
-        @include bp-laptop {
-            display: block;
-            margin-right: -17rem;
-            margin-top: -6rem;
+            @include bp-sm-mobile {
+                width: 100%;
+            }
         }
 
-        @include bp-xl-tablet {
-            margin-right: -20rem;
-        }
 
     }
-
-    .hero-mobile-img {
-        display: none;
-
-
-    }
-
-
 }
