@@ -14,11 +14,18 @@
 
         @include bp-sm-tablet-one {
             flex-direction: column;
+            width: 100%;
         }
+
+
 
         .hero-text {
             margin-top: 2rem;
             width: 60%;
+
+            @include bp-sm-tablet-one {
+                width: 100%;
+            }
 
             h1 {
                 color: $blue-900;

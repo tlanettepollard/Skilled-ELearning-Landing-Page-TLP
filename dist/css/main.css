@@ -377,11 +377,17 @@ p {
 @media screen and (max-width: 740px) {
   #hero .hero-content-container {
     flex-direction: column;
+    width: 100%;
   }
 }
 #hero .hero-content-container .hero-text {
   margin-top: 2rem;
   width: 60%;
+}
+@media screen and (max-width: 740px) {
+  #hero .hero-content-container .hero-text {
+    width: 100%;
+  }
 }
 #hero .hero-content-container .hero-text h1 {
   color: #13183F;
