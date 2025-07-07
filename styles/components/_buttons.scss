@@ -13,7 +13,7 @@
     cursor: pointer;
     transition: background .2s ease-in;
 
-    @include bp-xs-mobile {
+    @include bp-sm-mobile {
         width: 8.125rem;
         height: 2.5rem;
         font-size: .875rem;
@@ -41,68 +41,3 @@
 .hero-btn:hover {
     background: var(--gradient-preset-1-light, linear-gradient(0deg, rgba(255, 255, 255, 0.50) 0%, rgba(255, 255, 255, 0.50) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
 }
-
-/*.btn {
-    width: 10.5rem;
-    height: 3.6875rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: $btn-font-color;
-    @include flex(row, center, center);
-    border-radius: 1.75rem;
-    -webkit-border-radius: 1.75rem;
-    -moz-border-radius: 1.75rem;
-    -ms-border-radius: 1.75rem;
-    -o-border-radius: 1.75rem;
-
-    @include bp-md-tablet {
-        width: 9.5rem;
-        height: 3rem;
-    }
-
-    @include bp-lg-tablet {
-        width: 10.5rem;
-        height: 3.6875rem;
-        font-size: 1.125rem;
-    }
-
-}
-
-a:link {
-    text-decoration: none;
-}*/
-
-// Header Button
-/*.header__btn {
-    background-color: $header-btn;
-    gap: $spacing-100;
-    padding: $spacing-200 $spacing-400;
-    width: 10.5rem;
-    height: 3.6875rem;
-
-    @include bp-md-tablet {
-        width: 9.5rem;
-        height: 3rem;
-        font-size: 1.125rem;
-        padding: $spacing-150 $spacing-300;
-    }
-
-    @include bp-xxl-desktop {
-        width: 10.5rem;
-        height: 3.6875rem;
-    }
-}
-
-.header__btn:hover {
-    background-color: $blue-600;
-}*/
-
-// Hero Button
-/*
-.hero__btn {
-    @include gradient(to top, $list1);
-}
-
-.footer__btn {
-    @include gradient(to top, $list2);
-}*/
