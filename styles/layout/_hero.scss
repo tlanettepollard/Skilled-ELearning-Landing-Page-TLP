@@ -12,11 +12,18 @@
 
         h1 {
             color: $blue-900;
+            @include bp-laptop {
+                font-size: 2.5rem;
+            }
+
         }
 
         p {
             color: $grey;
             width: 77%;
+            @include bp-laptop {
+                width: 90%;
+            }
         }
     }
 
@@ -24,140 +31,29 @@
         margin-right: -33rem;
         margin-top: -15rem;
 
-        
-       
+        @include bp-laptop {
+            display: none;
+        }
 
     }
 
     .hero-tablet-img {
         display: none;
 
-
-
+        @include bp-laptop {
+            display: block;
+            margin-right: -17rem;
+            margin-top: -6rem;
+        }
 
     }
 
     .hero-mobile-img {
         display: none;
 
-        
+
 
     }
 
 
 }
-
-
-
-
-
-/*.hero {
-    position: relative;
-    @include flex(column, center, center);
-    align-self: stretch;
-    gap: $spacing-100;
-    padding: $spacing-800 $spacing-250;
-
-    @include bp-md-tablet {
-        padding: $spacing-800 $spacing-550;
-    }
-
-    @include bp-xxl-desktop {
-        padding: $spacing-800 $spacing-1000;
-    }
-
-    &__container {
-        @include flex (column, center, center);
-        align-self: stretch;
-
-        @include bp-md-tablet {
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: $spacing-300;
-        }
-
-        @include bp-xxl-desktop {
-            height: 35rem;
-        }
-
-
-        .hero__content {
-            @include flex (column, center, flex-start);
-            gap: $spacing-100;
-            max-width: 70rem;
-
-            @include bp-md-tablet {
-                gap: $spacing-500;
-                width: 50%;
-            }
-
-            @include bp-xxl-desktop {
-                width: 40%;
-            }
-
-
-
-            &--title {
-                color: $blue-900;
-
-                @include bp-md-tablet {
-                    font-size: 2.5rem;
-                }
-
-                @include bp-xxl-desktop {
-                    font-size: 3.5rem;
-                }
-            }
-
-            &--text {
-                color: $grey;
-
-                @include bp-xxl-desktop {
-                    width: 28.5625rem;
-                }
-            }
-
-        }
-
-        .hero__img--mobile {
-            background-image: url('/assets/image-hero-mobile.webp');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 27.1875rem 25.5625rem;
-            height: 24.125rem;
-            width: 100%;
-            margin: auto;
-            margin-top: $spacing-600;
-
-            @include bp-md-tablet {
-                display: none;
-            }
-
-        }
-    }
-}
-*/
-
-// Placed hero image for tablet & desktop outside of hero container near body tag
-
-/*.hero__img {
-
-    @include bp-md-tablet {
-        position: absolute;
-        z-index: 1;
-        width: auto;
-        height: auto;
-        right: 0;
-        transform: translateX(40%);
-
-        /*background-image: url('/assets/image-hero-tablet.webp');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom left 3.125rem;
-        //right: 0;
-        width: 60%;
-        height: 50dvh;
-    }
-
-}
-*/

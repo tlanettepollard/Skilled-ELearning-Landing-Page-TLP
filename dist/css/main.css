@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+/*$sm-mobile: 576px;*/
 /* Box sizing rules */
 *,
 *::before,
@@ -151,7 +152,7 @@ p {
   cursor: pointer;
   transition: background 0.2s ease-in;
 }
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 320px) {
   .black-btn {
     width: 8.125rem;
     height: 2.5rem;
@@ -181,66 +182,6 @@ p {
   background: var(--gradient-preset-1-light, linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%));
 }
 
-/*.btn {
-    width: 10.5rem;
-    height: 3.6875rem;
-    font-size: 1rem;
-    font-weight: 700;
-    color: $btn-font-color;
-    @include flex(row, center, center);
-    border-radius: 1.75rem;
-    -webkit-border-radius: 1.75rem;
-    -moz-border-radius: 1.75rem;
-    -ms-border-radius: 1.75rem;
-    -o-border-radius: 1.75rem;
-
-    @include bp-md-tablet {
-        width: 9.5rem;
-        height: 3rem;
-    }
-
-    @include bp-lg-tablet {
-        width: 10.5rem;
-        height: 3.6875rem;
-        font-size: 1.125rem;
-    }
-
-}
-
-a:link {
-    text-decoration: none;
-}*/
-/*.header__btn {
-    background-color: $header-btn;
-    gap: $spacing-100;
-    padding: $spacing-200 $spacing-400;
-    width: 10.5rem;
-    height: 3.6875rem;
-
-    @include bp-md-tablet {
-        width: 9.5rem;
-        height: 3rem;
-        font-size: 1.125rem;
-        padding: $spacing-150 $spacing-300;
-    }
-
-    @include bp-xxl-desktop {
-        width: 10.5rem;
-        height: 3.6875rem;
-    }
-}
-
-.header__btn:hover {
-    background-color: $blue-600;
-}*/
-/*
-.hero__btn {
-    @include gradient(to top, $list1);
-}
-
-.footer__btn {
-    @include gradient(to top, $list2);
-}*/
 .container {
   width: 90%;
   max-width: 68.75rem;
@@ -435,128 +376,43 @@ a:link {
 .hero-content-container .hero-text h1 {
   color: #13183F;
 }
+@media screen and (max-width: 1400px) {
+  .hero-content-container .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
 .hero-content-container .hero-text p {
   color: #83869A;
   width: 77%;
+}
+@media screen and (max-width: 1400px) {
+  .hero-content-container .hero-text p {
+    width: 90%;
+  }
 }
 .hero-content-container .hero-desktop-img {
   margin-right: -33rem;
   margin-top: -15rem;
 }
+@media screen and (max-width: 1400px) {
+  .hero-content-container .hero-desktop-img {
+    display: none;
+  }
+}
 .hero-content-container .hero-tablet-img {
   display: none;
+}
+@media screen and (max-width: 1400px) {
+  .hero-content-container .hero-tablet-img {
+    display: block;
+    margin-right: -17rem;
+    margin-top: -6rem;
+  }
 }
 .hero-content-container .hero-mobile-img {
   display: none;
 }
 
-/*.hero {
-    position: relative;
-    @include flex(column, center, center);
-    align-self: stretch;
-    gap: $spacing-100;
-    padding: $spacing-800 $spacing-250;
-
-    @include bp-md-tablet {
-        padding: $spacing-800 $spacing-550;
-    }
-
-    @include bp-xxl-desktop {
-        padding: $spacing-800 $spacing-1000;
-    }
-
-    &__container {
-        @include flex (column, center, center);
-        align-self: stretch;
-
-        @include bp-md-tablet {
-            flex-direction: row;
-            justify-content: flex-start;
-            gap: $spacing-300;
-        }
-
-        @include bp-xxl-desktop {
-            height: 35rem;
-        }
-
-
-        .hero__content {
-            @include flex (column, center, flex-start);
-            gap: $spacing-100;
-            max-width: 70rem;
-
-            @include bp-md-tablet {
-                gap: $spacing-500;
-                width: 50%;
-            }
-
-            @include bp-xxl-desktop {
-                width: 40%;
-            }
-
-
-
-            &--title {
-                color: $blue-900;
-
-                @include bp-md-tablet {
-                    font-size: 2.5rem;
-                }
-
-                @include bp-xxl-desktop {
-                    font-size: 3.5rem;
-                }
-            }
-
-            &--text {
-                color: $grey;
-
-                @include bp-xxl-desktop {
-                    width: 28.5625rem;
-                }
-            }
-
-        }
-
-        .hero__img--mobile {
-            background-image: url('/assets/image-hero-mobile.webp');
-            background-repeat: no-repeat;
-            background-position: center;
-            background-size: 27.1875rem 25.5625rem;
-            height: 24.125rem;
-            width: 100%;
-            margin: auto;
-            margin-top: $spacing-600;
-
-            @include bp-md-tablet {
-                display: none;
-            }
-
-        }
-    }
-}
-*/
-/*.hero__img {
-
-    @include bp-md-tablet {
-        position: absolute;
-        z-index: 1;
-        width: auto;
-        height: auto;
-        right: 0;
-        transform: translateX(40%);
-
-        /*background-image: url('/assets/image-hero-tablet.webp');
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: bottom left 3.125rem;
-        //right: 0;
-        width: 60%;
-        height: 50dvh;
-    }
-
-}
-*/
 .top-nav {
   position: relative;
   z-index: 1;
@@ -567,42 +423,6 @@ a:link {
   margin-top: 1rem;
 }
 
-/*.header {
-    //position: absolute;
-    width: 100%;
-    z-index: 1;
-    @include flex(column, center, center);
-    padding: $spacing-200 $spacing-250;
-    gap: $spacing-1600;
-    align-self: stretch;
-
-    @include bp-md-tablet {
-        padding: $spacing-300 $spacing-550;
-    }
-
-    @include bp-xxl-desktop {
-        padding: $spacing-300 $spacing-1000;
-        gap: $spacing-1600;
-    }
-
-    &__container {
-        width: 100%;
-        height: 5rem;
-        @include flex(row, space-between, center);
-        align-self: stretch;
-
-        @include bp-lg-tablet {
-            max-width: 95%;
-        }
-
-        @include bp-xxl-desktop {
-            max-width: 90%;
-        }
-    }
-
-
-
-}*/
 body {
   font-family: "Plus Jakarta Sans", serif;
   line-height: 150%;
@@ -625,7 +445,7 @@ a {
   width: 4.9556rem;
   height: 1.25rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (max-width: 1024px) {
   .logo {
     width: 6.9375rem;
     height: 1.75rem;
