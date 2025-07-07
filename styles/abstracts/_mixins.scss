@@ -53,3 +53,17 @@
         @content;
     }
 }
+
+// MD Tablet 768px
+@mixin bp-md-tablet-max {
+    @media screen and (max-width: $md-tablet){
+        @content;
+    }
+}
+
+// SM Mobile 576px
+@mixin bp-sm-mobile-max {
+    @media screen and (max-width: $sm-mobile) {
+        @content;
+    }
+}

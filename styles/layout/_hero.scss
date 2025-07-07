@@ -16,13 +16,27 @@
 
         p {
             color: $grey;
+            width: 77%;
         }
     }
 
     .hero-desktop-img {
         margin-right: -33rem;
-        margin-top: -12rem;
+        margin-top: -15rem;
+        
     }
+
+    .hero-tablet-img {
+        display: none;
+       
+    }
+
+    .hero-mobile-img {
+        display: none;
+
+       
+    }
+
 
 }
 

@@ -437,10 +437,17 @@ a:link {
 }
 .hero-content-container .hero-text p {
   color: #83869A;
+  width: 77%;
 }
 .hero-content-container .hero-desktop-img {
   margin-right: -33rem;
-  margin-top: -12rem;
+  margin-top: -15rem;
+}
+.hero-content-container .hero-tablet-img {
+  display: none;
+}
+.hero-content-container .hero-mobile-img {
+  display: none;
 }
 
 /*.hero {
