@@ -361,7 +361,12 @@ p {
         @include flex(row, space-between, center);
     }
 }*/
-.hero-content-container {
+@media screen and (max-width: 740px) {
+  #hero {
+    margin-top: 3rem;
+  }
+}
+#hero .hero-content-container {
   z-index: 2;
   display: flex;
   flex-direction: row;
@@ -369,73 +374,99 @@ p {
   align-items: center;
   gap: 2rem;
 }
-.hero-content-container .hero-text {
+@media screen and (max-width: 740px) {
+  #hero .hero-content-container {
+    flex-direction: column;
+  }
+}
+#hero .hero-content-container .hero-text {
   margin-top: 2rem;
   width: 60%;
 }
-.hero-content-container .hero-text h1 {
+#hero .hero-content-container .hero-text h1 {
   color: #13183F;
 }
 @media screen and (max-width: 1400px) {
-  .hero-content-container .hero-text h1 {
+  #hero .hero-content-container .hero-text h1 {
     font-size: 2.5rem;
   }
 }
 @media screen and (max-width: 1024px) {
-  .hero-content-container .hero-text h1 {
+  #hero .hero-content-container .hero-text h1 {
     width: 90%;
   }
 }
 @media screen and (max-width: 932px) {
-  .hero-content-container .hero-text h1 {
+  #hero .hero-content-container .hero-text h1 {
     width: 100%;
   }
 }
-.hero-content-container .hero-text p {
+@media screen and (max-width: 740px) {
+  #hero .hero-content-container .hero-text h1 {
+    font-size: 2.5rem;
+  }
+}
+#hero .hero-content-container .hero-text p {
   color: #83869A;
   width: 77%;
 }
 @media screen and (max-width: 1400px) {
-  .hero-content-container .hero-text p {
+  #hero .hero-content-container .hero-text p {
     width: 90%;
   }
 }
 @media screen and (max-width: 1024px) {
-  .hero-content-container .hero-text p {
+  #hero .hero-content-container .hero-text p {
     width: 55%;
   }
 }
 @media screen and (max-width: 932px) {
-  .hero-content-container .hero-text p {
+  #hero .hero-content-container .hero-text p {
     width: 100%;
   }
 }
-.hero-content-container .hero-desktop-img {
+#hero .hero-content-container .hero-desktop-img {
   margin-right: -33rem;
   margin-top: -15rem;
 }
 @media screen and (max-width: 1400px) {
-  .hero-content-container .hero-desktop-img {
+  #hero .hero-content-container .hero-desktop-img {
     display: none;
   }
 }
-.hero-content-container .hero-tablet-img {
+#hero .hero-content-container .hero-tablet-img {
   display: none;
 }
 @media screen and (max-width: 1400px) {
-  .hero-content-container .hero-tablet-img {
+  #hero .hero-content-container .hero-tablet-img {
     display: block;
     margin-right: -17rem;
     margin-top: -6rem;
   }
 }
 @media screen and (max-width: 1280px) {
-  .hero-content-container .hero-tablet-img {
+  #hero .hero-content-container .hero-tablet-img {
     margin-right: -20rem;
   }
 }
-.hero-content-container .hero-mobile-img {
+@media screen and (max-width: 740px) {
+  #hero .hero-content-container .hero-tablet-img {
+    display: none;
+  }
+}
+#hero .hero-content-container .hero-mobile-img {
   display: none;
+}
+@media screen and (max-width: 740px) {
+  #hero .hero-content-container .hero-mobile-img {
+    display: block;
+    margin-top: 2rem;
+  }
+}
+@media screen and (max-width: 320px) {
+  #hero .hero-content-container .hero-mobile-img {
+    width: 100%;
+  }
 }
 
 .top-nav {
