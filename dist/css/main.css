@@ -381,6 +381,16 @@ p {
     font-size: 2.5rem;
   }
 }
+@media screen and (max-width: 1024px) {
+  .hero-content-container .hero-text h1 {
+    width: 90%;
+  }
+}
+@media screen and (max-width: 932px) {
+  .hero-content-container .hero-text h1 {
+    width: 100%;
+  }
+}
 .hero-content-container .hero-text p {
   color: #83869A;
   width: 77%;
@@ -388,6 +398,16 @@ p {
 @media screen and (max-width: 1400px) {
   .hero-content-container .hero-text p {
     width: 90%;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .hero-content-container .hero-text p {
+    width: 55%;
+  }
+}
+@media screen and (max-width: 932px) {
+  .hero-content-container .hero-text p {
+    width: 100%;
   }
 }
 .hero-content-container .hero-desktop-img {
@@ -407,6 +427,11 @@ p {
     display: block;
     margin-right: -17rem;
     margin-top: -6rem;
+  }
+}
+@media screen and (max-width: 1280px) {
+  .hero-content-container .hero-tablet-img {
+    margin-right: -20rem;
   }
 }
 .hero-content-container .hero-mobile-img {
