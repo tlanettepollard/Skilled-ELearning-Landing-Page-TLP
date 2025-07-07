@@ -10,60 +10,23 @@
 
 // Media Mixins
 
-// SM Mobile 576px
-@mixin bp-sm-mobile {
-    @media screen and (min-width: $sm-mobile) {
+// Tablets and Smaller
+@mixin bp-tablets-1 {
+    @media screen and (max-width: 64rem) {
         @content;
     }
 }
 
-// MD Tablet 768px
-
-@mixin bp-md-tablet {
-    @media screen and (min-width: $md-tablet) {
+@mixin bp-tablets-2 {
+    @media screen and (max-width: 48rem) {
         @content;
     }
 }
 
-// LG Tablet 992px
-@mixin bp-lg-tablet {
-    @media screen and (min-width: $lg-tablet) {
-        @content;
-    }
-}
+// Mobile Phones 
 
-// XL Desktop 1200px
-@mixin bp-xl-desktop {
-    @media screen and (min-width: $xl-desktop) {
-        @content;
-    }
-}
-
-// XXL Desktop 1400px
-@mixin bp-xxl-desktop {
-    @media screen and (min-width: $xxl-desktop) {
-        @content;
-    }
-}
-
-// Media Mixins-- Max-Width
-// XS Mobile 375px
-@mixin bp-xs-mobile {
-    @media screen and (max-width: $xs-mobile) {
-        @content;
-    }
-}
-
-// MD Tablet 768px
-@mixin bp-md-tablet-max {
-    @media screen and (max-width: $md-tablet){
-        @content;
-    }
-}
-
-// SM Mobile 576px
-@mixin bp-sm-mobile-max {
-    @media screen and (max-width: $sm-mobile) {
+@mixin bp-mobile {
+    @media screen and (max-width: 37.5rem) {
         @content;
     }
 }
