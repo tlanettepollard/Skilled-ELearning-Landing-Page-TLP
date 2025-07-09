@@ -222,6 +222,17 @@ p {
         width: 90%;
     }
 }*/
+#popular-courses {
+  margin-top: 5rem;
+  margin-bottom: 10rem;
+}
+#popular-courses .courses-content-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3.5rem 2rem;
+  justify-content: center;
+}
+
 /*.courses {
     @include flex(column, center, center);
     align-self: stretch;
