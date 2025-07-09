@@ -1,7 +1,17 @@
 @use '../abstracts' as *;
 @use '../base' as *;
 
+#popular-courses {
+    margin-top: $spacing-1000;
+    margin-bottom: 10rem;
 
+    .courses-content-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: $spacing-700 $spacing-400;
+        justify-content: center;
+    }
+}
 
 
 
