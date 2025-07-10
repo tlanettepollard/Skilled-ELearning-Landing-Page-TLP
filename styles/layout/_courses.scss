@@ -29,6 +29,7 @@
             border-radius: .9375rem;
             background: $white;
             box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
+            position: relative;
 
             &-icon {
                 margin-left: $spacing-300;
@@ -50,6 +51,13 @@
                 color: $grey;
                 width: 90%;
             }
+
+            &-link {
+               color: $pink-600;
+               cursor: pointer; 
+               position: absolute;
+               bottom: 10%;
+            }
         }
     }
 }
@@ -58,123 +66,3 @@
 
 
 
-
-/*.courses {
-    @include flex(column, center, center);
-    align-self: stretch;
-    padding: $spacing-800 $spacing-250 $spacing-1000 $spacing-250;
-    gap: $spacing-100;
-
-    @include bp-md-tablet {
-        padding: $spacing-800 $spacing-550 $spacing-1800 $spacing-550;
-    }
-
-    @include bp-xxl-desktop {
-        padding: $spacing-800 $spacing-1000 $spacing-1800 $spacing-1000;
-        margin: auto;
-    }
-
-    &__container {
-        .course__cards {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            gap: $spacing-400;
-
-            @include bp-md-tablet {
-                grid-template-columns: 1fr 1fr;
-                grid-template-rows: 3fr;
-                row-gap: $spacing-400;
-                column-gap: $spacing-300;
-            }
-
-            @include bp-xl-desktop {
-                grid-template-columns: 1fr 1fr 1fr;
-                grid-template-rows: 2fr;
-                column-gap: $spacing-400;
-            }
-
-            .intro__heading {
-                @include flex(column, center, flex-start);
-                align-self: stretch;
-                padding: $spacing-400;
-                border-radius: .9375rem;
-                @include gradient(to top, $list1);
-                box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
-
-
-                @include bp-md-tablet {
-                    margin-top: 3.125rem;
-                    padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
-                    justify-content: flex-start;
-                }
-
-                &--title {
-                    color: #ffffff;
-                }
-
-            }
-
-            .course__card {
-                position: relative;
-                width: 100%;
-                height: auto;
-                @include flex(column, center, flex-start);
-                align-self: stretch;
-
-
-
-                &--logo {
-                    @include flex (row, center, flex-start);
-                    padding-left: $spacing-400;
-                    gap: $spacing-100;
-                    z-index: 1;
-                    transform: translateY(30px);
-                }
-
-                .card__content {
-                    @include flex(column, center, flex-start);
-                    padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
-                    gap: $spacing-100;
-                    border-radius: 15px;
-                    background: #FFF;
-                    //box-shadow: 0px 25px 50px 0px rgba(6, 22, 141, 0.04);
-                    filter: drop-shadow(2px 4px 8px #585858);
-
-                    @include bp-md-tablet {
-                        flex: 1 0 0;
-                    }
-
-                    &--heading {
-                        height: $spacing-300;
-                        color: $blue-900;
-
-                        @include bp-md-tablet {
-                            align-self: stretch;
-                        }
-                    }
-
-                    &--text {
-                        padding-top: $spacing-300;
-                        padding-bottom: $spacing-250;
-                        color: $grey;
-
-                        @include bp-md-tablet {
-                            flex: 1 0 0;
-                            align-self: stretch;
-                            font-size: 1.125rem;
-                        }
-                    }
-
-                    &--link {
-                        @include flex(row, center, center);
-                        width: 6.5rem;
-                        height: 1.75rem;
-                        color: $pink-600;
-                    }
-                }
-
-            }
-        }
-    }
-}*/
