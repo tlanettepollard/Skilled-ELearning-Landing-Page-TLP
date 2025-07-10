@@ -11,15 +11,37 @@
         gap: $spacing-700 $spacing-400;
         justify-content: center;
 
+        @include bp-laptop {
+            grid-template-columns: repeat(2, 1fr);
+            justify-items: center;
+        }
+
+        @include bp-sm-tablet-two {
+            grid-template-columns: repeat(1, 1fr);
+            gap: $spacing-600 0rem;
+        }
+
         #gradient-card {
             @include gradient(to top, $list1);
             box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
             border-radius: .9375rem;
 
+            @include bp-sm-tablet-two {
+                height: 12.5rem;
+            }
+
+            @include bp-sm-tablet-one {
+                height: 17.5rem;
+            }
+
             h2 {
                 color: $white;
                 width: 90%;
                 padding: $spacing-800 $spacing-400 $spacing-500 $spacing-400;
+
+                @include bp-sm-tablet-two {
+                    width: 65%;
+                }
             }
         }
 
@@ -30,6 +52,14 @@
             background: $white;
             box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
             position: relative;
+
+            @include bp-sm-tablet-two {
+                width: 100%;
+            }
+
+            @include bp-sm-mobile {
+                height: 25rem;
+            }
 
             &-icon {
                 margin-left: $spacing-300;
@@ -50,19 +80,18 @@
                 padding-bottom: $spacing-300;
                 color: $grey;
                 width: 90%;
+
+                @include bp-sm-tablet-two {
+                    width: 70%;
+                }
             }
 
             &-link {
-               color: $pink-600;
-               cursor: pointer; 
-               position: absolute;
-               bottom: 10%;
+                color: $pink-600;
+                cursor: pointer;
+                position: absolute;
+                bottom: 10%;
             }
         }
     }
 }
-
-
-
-
-
