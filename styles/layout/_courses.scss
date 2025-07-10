@@ -28,6 +28,22 @@
             height: 20.125rem;
             border-radius: .9375rem;
             background: $white;
+            box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
+
+            &-icon {
+                margin-left: $spacing-300;
+                margin-top: -1.5rem;
+            }
+
+            &-text {
+                padding-top: $spacing-200;
+                padding-left: 1.7rem;
+            }
+
+            h3 {
+                color: $blue-900;
+                padding-bottom: $spacing-300;
+            }
         }
     }
 }
