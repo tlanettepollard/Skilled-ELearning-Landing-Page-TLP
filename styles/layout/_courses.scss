@@ -26,7 +26,13 @@
             box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.40);
             border-radius: .9375rem;
 
+            @include bp-laptop {
+                width: 22rem;
+                height: 20.125rem;
+            }
+
             @include bp-sm-tablet-two {
+                width: 100%;
                 height: 12.5rem;
             }
 
