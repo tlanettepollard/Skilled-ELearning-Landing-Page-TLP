@@ -261,6 +261,11 @@ p {
   color: #13183F;
   padding-bottom: 1.5rem;
 }
+#popular-courses .courses-content-container .course-card p {
+  padding-bottom: 1.5rem;
+  color: #83869A;
+  width: 90%;
+}
 
 /*.courses {
     @include flex(column, center, center);
