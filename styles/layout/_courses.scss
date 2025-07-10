@@ -44,6 +44,12 @@
                 color: $blue-900;
                 padding-bottom: $spacing-300;
             }
+
+            p {
+                padding-bottom: $spacing-300;
+                color: $grey;
+                width: 90%;
+            }
         }
     }
 }
