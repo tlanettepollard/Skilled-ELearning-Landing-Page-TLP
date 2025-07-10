@@ -248,15 +248,49 @@ p {
   gap: 3.5rem 2rem;
   justify-content: center;
 }
+@media screen and (max-width: 1400px) {
+  #popular-courses .courses-content-container {
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 850px) {
+  #popular-courses .courses-content-container {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 3rem 0rem;
+  }
+}
 #popular-courses .courses-content-container #gradient-card {
   background: linear-gradient(to top, #F02aa6, #ff6f48);
   box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.4);
   border-radius: 0.9375rem;
 }
+@media screen and (max-width: 1400px) {
+  #popular-courses .courses-content-container #gradient-card {
+    width: 22rem;
+    height: 20.125rem;
+  }
+}
+@media screen and (max-width: 850px) {
+  #popular-courses .courses-content-container #gradient-card {
+    width: 100%;
+    height: 12.5rem;
+  }
+}
+@media screen and (max-width: 740px) {
+  #popular-courses .courses-content-container #gradient-card {
+    height: 17.5rem;
+  }
+}
 #popular-courses .courses-content-container #gradient-card h2 {
   color: #ffffff;
   width: 90%;
   padding: 4rem 2rem 2.5rem 2rem;
+}
+@media screen and (max-width: 850px) {
+  #popular-courses .courses-content-container #gradient-card h2 {
+    width: 65%;
+  }
 }
 #popular-courses .courses-content-container .course-card {
   width: 22rem;
@@ -265,6 +299,16 @@ p {
   background: #ffffff;
   box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.4);
   position: relative;
+}
+@media screen and (max-width: 850px) {
+  #popular-courses .courses-content-container .course-card {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 320px) {
+  #popular-courses .courses-content-container .course-card {
+    height: 25rem;
+  }
 }
 #popular-courses .courses-content-container .course-card-icon {
   margin-left: 1.5rem;
@@ -282,6 +326,11 @@ p {
   padding-bottom: 1.5rem;
   color: #83869A;
   width: 90%;
+}
+@media screen and (max-width: 850px) {
+  #popular-courses .courses-content-container .course-card p {
+    width: 70%;
+  }
 }
 #popular-courses .courses-content-container .course-card-link {
   color: #f74780;
