@@ -4,9 +4,13 @@
 footer {
     background: $blue-900;
     padding: $spacing-300 $spacing-1000;
-
+    
     .footer-nav {
         @include flex(row, space-between, center);
+        @include bp-sm-mobile {
+            width: 100%;
+        }
+        
     }
 
 }
