@@ -193,6 +193,12 @@ p {
   cursor: pointer;
   transition: background 0.2s ease-in;
 }
+@media screen and (max-width: 320px) {
+  .footer-btn {
+    width: 8.125rem;
+    height: 2.5rem;
+  }
+}
 
 .footer-btn:hover {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.5) 0%, rgba(255, 255, 255, 0.5) 100%), linear-gradient(180deg, #4851FF -54.32%, #F02AA6 100%);
@@ -271,6 +277,11 @@ p {
     height: 20.125rem;
   }
 }
+@media screen and (max-width: 1024px) {
+  #popular-courses .courses-content-container #gradient-card {
+    width: 21.25rem;
+  }
+}
 @media screen and (max-width: 850px) {
   #popular-courses .courses-content-container #gradient-card {
     width: 100%;
@@ -299,6 +310,11 @@ p {
   background: #ffffff;
   box-shadow: 0rem 1.5625rem 3.125rem 0rem rgba(0, 22, 141, 0.4);
   position: relative;
+}
+@media screen and (max-width: 1024px) {
+  #popular-courses .courses-content-container .course-card {
+    width: 21.25rem;
+  }
 }
 @media screen and (max-width: 850px) {
   #popular-courses .courses-content-container .course-card {
@@ -348,6 +364,11 @@ footer .footer-nav {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+@media screen and (max-width: 320px) {
+  footer .footer-nav {
+    width: 100%;
+  }
 }
 
 /*footer {
