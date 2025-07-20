@@ -4,37 +4,23 @@
 footer {
     background: $blue-900;
     padding: $spacing-300 $spacing-1000;
+
+    @include bp-lg-tablet {
+        padding: $spacing-300 $spacing-550;
+    }
+
     
+
+
+
     .footer-nav {
         @include flex(row, space-between, center);
+        max-width: 70rem;
+
         @include bp-sm-mobile {
             width: 100%;
         }
-        
+
     }
 
 }
-
-
-
-
-/*footer {
-    background-color: $blue-900;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    @include bp-md-tablet {
-        padding-left: 2.75rem;
-        padding-right: 2.75rem;
-    }
-
-    @include bp-xl-desktop {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    .footer__container {
-        height: 7.5rem;
-        @include flex(row, space-between, center);
-    }
-}*/

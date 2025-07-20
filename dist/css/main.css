@@ -211,39 +211,6 @@ p {
   margin-right: auto;
 }
 
-/*.container {
-    margin-left: auto;
-    margin-right: auto;
-
-    @include bp-xs-mobile {
-        width: 100%; 
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
-
-    @include bp-sm-mobile {
-        padding-left: 2rem;
-        padding-right: 2rem;
-    }
-
-    @include bp-md-tablet {
-        width: 43.0625rem; 
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    @include bp-lg-tablet {
-        width: 55.75rem;
-    }
-
-    @include bp-xl-desktop {
-        width: 70rem;
-    }
-
-    @include bp-xxl-desktop {
-        width: 90%;
-    }
-}*/
 #popular-courses {
   margin-top: 5rem;
   margin-bottom: 10rem;
@@ -359,11 +326,17 @@ footer {
   background: #13183F;
   padding: 1.5rem 5rem;
 }
+@media screen and (max-width: 1024px) {
+  footer {
+    padding: 1.5rem 2.75rem;
+  }
+}
 footer .footer-nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  max-width: 70rem;
 }
 @media screen and (max-width: 320px) {
   footer .footer-nav {
@@ -371,26 +344,6 @@ footer .footer-nav {
   }
 }
 
-/*footer {
-    background-color: $blue-900;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    @include bp-md-tablet {
-        padding-left: 2.75rem;
-        padding-right: 2.75rem;
-    }
-
-    @include bp-xl-desktop {
-        padding-left: 0rem;
-        padding-right: 0rem;
-    }
-
-    .footer__container {
-        height: 7.5rem;
-        @include flex(row, space-between, center);
-    }
-}*/
 @media screen and (max-width: 740px) {
   #hero {
     margin-top: 3rem;
