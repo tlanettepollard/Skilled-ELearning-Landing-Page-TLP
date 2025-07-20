@@ -9,7 +9,13 @@ footer {
         padding: $spacing-300 $spacing-550;
     }
 
-    
+    @include bp-md-tablet {
+        padding: $spacing-300 $spacing-500;
+    }
+
+    @include bp-sm-tablet-one {
+        padding: $spacing-300 $spacing-150;
+    }
 
 
 
@@ -20,6 +26,8 @@ footer {
         @include bp-sm-mobile {
             width: 100%;
         }
+
+
 
     }
 
