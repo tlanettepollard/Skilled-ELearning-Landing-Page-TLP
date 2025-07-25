@@ -94,9 +94,10 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Website - [T. Lanette Pollard](https://trista-lanette-pollard-portfolio.vercel.app/)
+- Frontend Mentor - [@tlanettepollard](https://www.frontendmentor.io/profile/tlanettepollard)
+- Twitter - [@TpLanetteNBCT](https://x.com/TpLanetteNBCT)
+- BlueSky - [@tristalanpollard](https://bsky.app/profile/tristalanpollard.bsky.social)
 
 **Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
 
