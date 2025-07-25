@@ -29,12 +29,14 @@ Users should be able to:
 
 ### Screenshot
 
+
+#### Mobile View
 ![Mobile View](./assets/screenshots/MobileView.jpg)
 
-
+#### Tablet View
 ![Tablet View](./assets/screenshots/TabletView.jpg)
 
-
+#### Laptop View
 ![Laptop View](./assets/screenshots/MacBook%20Pro-1753477317625.jpeg)
 
 
