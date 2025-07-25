@@ -30,10 +30,10 @@ Users should be able to:
 ### Screenshot
 
 ![Mobile View](./assets/screenshots/MobileView.jpg)
---
+
 
 ![Tablet View](./assets/screenshots/TabletView.jpg)
---
+
 
 ![Laptop View](./assets/screenshots/MacBook%20Pro-1753477317625.jpeg)
 
