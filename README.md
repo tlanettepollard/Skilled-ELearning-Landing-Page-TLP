@@ -29,9 +29,11 @@ Users should be able to:
 
 ### Screenshot
 
-![Mobile View](./assets/screenshots/iPhone%2012%20Pro-1753477235259.jpeg)
+![Mobile View](./assets/screenshots/MobileView.jpg)
+--
 
-![Tablet View](./assets/screenshots/iPad-1753477283211.jpeg)
+![Tablet View](./assets/screenshots/TabletView.jpg)
+--
 
 ![Laptop View](./assets/screenshots/MacBook%20Pro-1753477317625.jpeg)
 
