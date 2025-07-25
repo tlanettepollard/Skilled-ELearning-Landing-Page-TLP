@@ -22,6 +22,7 @@
         width: 8.125rem;
         height: 2.5rem;
         font-size: .875rem;
+        padding: $spacing-200;
     }
 }
 
@@ -56,6 +57,8 @@
     @include bp-sm-mobile {
         width: 8.125rem;
         height: 2.5rem;
+        font-size: .875rem;
+        padding: $spacing-200;
     }
 }
 
