@@ -31,9 +31,9 @@ Users should be able to:
 
 ![Mobile View](./assets/screenshots/iPhone%2012%20Pro-1753477235259.jpeg)
 
-![Tablet View](./screenshot.jpg)
+![Tablet View](./assets/screenshots/iPad-1753477283211.jpeg)
 
-![Laptop View](./screenshot.jpg)
+![Laptop View](./assets/screenshots/MacBook%20Pro-1753477317625.jpeg)
 
 Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
 
