@@ -11,6 +11,7 @@
         z-index: 2;
         @include flex(row, space-between, center);
         gap: $spacing-400;
+       
 
         @include bp-sm-tablet-one {
             flex-direction: column;

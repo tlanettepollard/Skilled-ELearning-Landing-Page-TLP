@@ -1,11 +1,16 @@
 @use '../abstracts' as *;
 
+.btn {
+    @include flex(row, center, center);
+    width: 10.5rem;
+    height: 3.6875rem;
+    padding: $spacing-200 $spacing-400;
+    gap: $spacing-100;
+}
+
 .black-btn {
     z-index: 1;
     background-color: $header-btn;
-    gap: $spacing-100;
-    width: 10.5rem;
-    height: 3.6875rem;
     color: $btn-font-color;
     border-radius: 1.75rem;
     border: none;
@@ -26,10 +31,7 @@
 
 .hero-btn {
     @include gradient(to top, $list1);
-    margin-top: 2rem;
-    gap: $spacing-100;
-    width: 10.5rem;
-    height: 3.6875rem;
+    margin-top: 2.5rem;
     color: $btn-font-color;
     border-radius: 1.9375rem;
     border: none;
