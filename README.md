@@ -64,22 +64,61 @@ After watching Practical Web Dev's tutorial, I decided to code from a different 
 To see how you can add code snippets, see below:
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<!-- Hero Images -->
+            <div class="hero-desktop-img">
+              <img src="./assets/image-hero-desktop.webp" alt="hero desktop image">
+            </div>
+            <div class="hero-tablet-img">
+              <img src="./assets/image-hero-tablet.webp" alt="hero tablet image">
+            </div>
+            <div class="hero-mobile-img">
+              <img src="./assets/image-hero-mobile.webp" alt="">
+            </div>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
-}
-```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
+ .hero-desktop-img {
+            margin-right: -33rem;
+            margin-top: -15rem;
+
+            @include bp-laptop {
+                display: none;
+            }
+
+        }
+
+        .hero-tablet-img {
+            display: none;
+
+            @include bp-laptop {
+                display: block;
+                margin-right: -17rem;
+                margin-top: -6rem;
+            }
+
+            @include bp-xl-tablet {
+                margin-right: -20rem;
+            }
+
+            @include bp-sm-tablet-one {
+                display: none;
+            }
+
+        }
+
+        .hero-mobile-img {
+            display: none;
+
+            @include bp-sm-tablet-one {
+                display: block;
+                margin-top: 2rem;
+            }
+
+            @include bp-sm-mobile {
+                width: 100%;
+            }
+        }
 ```
 
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
