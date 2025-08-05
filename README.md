@@ -62,6 +62,7 @@ After watching Practical Web Dev's tutorial, I decided to code from a different 
 The tutorial was also helpful with placing the hero image. Initially I tried placing it as a background image and using **position: absolute** and **transform: translateX** to position the image. However, I had difficulty. That's when I found the tutorial and decided to insert the image in the index file. I used negative margins to position the image. 
 
 I've included the code for the hero image: 
+
 ---
 
 ```html
