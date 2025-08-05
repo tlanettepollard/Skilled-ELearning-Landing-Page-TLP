@@ -61,7 +61,8 @@ Users should be able to:
 After watching Practical Web Dev's tutorial, I decided to code from a different perspective. Instead of coding and styling with "mobile-first" in mind, I used his approach by styling "desktop-first". If there are few changes between the desktop and smaller breakpoints, then starting with desktop may be easier than starting with mobile. 
 The tutorial was also helpful with placing the hero image. Initially I tried placing it as a background image and using **position: absolute** and **transform: translateX** to position the image. However, I had difficulty. That's when I found the tutorial and decided to insert the image in the index file. I used negative margins to position the image. 
 
-
+I've included the code for the hero image: 
+---
 
 ```html
 <!-- Hero Images -->
