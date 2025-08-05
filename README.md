@@ -124,16 +124,16 @@ I've included the code for the hero image:
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I want to continue working with perfecting my skills with CSS and web page layouts.
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
 ### Useful resources
 
 - [Skilled E-Learning Landing Page Full Project Tutorial](https://www.youtube.com/watch?v=Bpmyy2nX_Pg) - This tutorial by Practical Web Dev helped me when I had difficulty styling the Hero image. 
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
+- [Stop Nesting Divs: Why Your Markup Is Making Layouts Harder ](https://javascript.plainenglish.io/stop-nesting-divs-why-your-markup-is-making-layouts-harder-c85b7f147029) - This is an article by Sanjeevani Bhandari about limiting the amount of **divs** you use in your HTML code.
+- [Why translateX() instead of margin or position: absolute? ](https://javascript.plainenglish.io/why-translatex-instead-of-margin-or-position-absolute-d1403efd4e7d) - Sanjeevani Bhandari
 
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+
 
 ## Author
 
