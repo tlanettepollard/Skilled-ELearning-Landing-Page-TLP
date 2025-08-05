@@ -145,6 +145,5 @@ I want to continue working with perfecting my skills with CSS and web page layou
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+[Practical Web Dev's](https://github.com/Practical-Web-Dev) tutorial was very helpful with the hero image placement. That was the one area where I was stuck during this project. 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
