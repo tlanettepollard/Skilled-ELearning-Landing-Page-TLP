@@ -16,7 +16,6 @@ This is a solution to the [Skilled e-learning landing page challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
-**Note: Delete this note and update the table of contents based on what sections you keep.**
 
 ## Overview
 
@@ -59,9 +58,10 @@ Users should be able to:
 
 ### What I learned
 
-After watching Practical Web Dev's tutorial, I decided to code from a different perspective. Instead of coding and styling with "mobile-first" in mind, I used his approach by styling with "desktop-first". 
+After watching Practical Web Dev's tutorial, I decided to code from a different perspective. Instead of coding and styling with "mobile-first" in mind, I used his approach by styling "desktop-first". If there are few changes between the desktop and smaller breakpoints, then starting with desktop may be easier than starting with mobile. 
+The tutorial was also helpful with placing the hero image. Initially I tried placing it as a background image and using **position: absolute** and **transform: translateX** to position the image. However, I had difficulty. That's when I found the tutorial and decided to insert the image in the index file. I used negative margins to position the image. 
 
-To see how you can add code snippets, see below:
+
 
 ```html
 <!-- Hero Images -->
