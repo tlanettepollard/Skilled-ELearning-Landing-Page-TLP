@@ -76,7 +76,7 @@ To see how you can add code snippets, see below:
             </div>
 ```
 ```css
- .hero-desktop-img {
+        .hero-desktop-img {
             margin-right: -33rem;
             margin-top: -15rem;
 
